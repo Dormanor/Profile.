@@ -1,4 +1,11 @@
-<html><style>.bg {
+<html><head>
+  <link rel = "icon" href = 
+"https://cdn.discordapp.com/avatars/775320672535576606/b5439574ab9f336fdf468e556ed969e3.png?size=4096" 
+        type = "image/x-icon">
+  <title>
+Zardak
+  </title></head>
+  <style>.bg {
     width: 100%;
     height: 100vh;
     display: flex;
@@ -35,118 +42,98 @@
   } 
   /*ee*/
   * {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
 }
 
-html {
-  font-size: 20px;
+.buttons {
+    margin: 10%;
+    text-align: center;
 }
 
-body {
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+.btn-hover {
+    width: 200px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #fff;
+    cursor: pointer;
+    margin: 20px;
+    height: 55px;
+    text-align:center;
+    border: none;
+    background-size: 300% 100%;
+
+    border-radius: 50px;
+    moz-transition: all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
 }
 
-.btn {
-  font-family: "Source Sans Pro", sans-serif;
-  font-weight: 900;
-  padding: 1.25rem 2rem;
-  font-size: 1rem;
-  border-radius: 3.5rem/100%;
-  position: relative;
-  min-width: 15rem;
-  max-width: 90vw;
-  overflow: hidden;
-  border: 0;
-  cursor: pointer;
-  text-transform: uppercase;
-  letter-spacing: 0.05em;
-  transition: all 330ms;
-}
-.btn + .btn {
-  margin-top: 1rem;
-}
-.btn span {
-  position: relative;
-  z-index: 1;
-}
-.btn:before {
-  content: "";
-  background-color: #21D4FD;
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  transform: scale(4) translateX(-100%);
-  transition: all 495ms ease-out;
-}
-.btn:hover:before, .btn:focus:before, .btn:active:before {
-  transform: scale(4) translate(37%);
+.btn-hover:hover {
+    background-position: 100% 0;
+    moz-transition: all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
 }
 
-.btn--alpha {
-  background-color: #21D4FD;
-  color: #B721FF;
-}
-.btn--alpha:before {
-  background-color: #B721FF;
-  background-image: linear-gradient(to right, #B721FF 30%, #21D4FD 100%);
-  position: absolute;
-}
-.btn--alpha:hover, .btn--alpha:focus, .btn--alpha:active {
-  color: #21D4FD;
+.btn-hover:focus {
+    outline: none;
 }
 
-.btn--beta {
-  background-color: #08AEEA;
-  color: #2AF598;
+.btn-hover.color-1 {
+    background-image: linear-gradient(to right, #25aae1, #40e495, #30dd8a, #2bb673);
+    box-shadow: 0 4px 15px 0 rgba(49, 196, 190, 0.75);
 }
-.btn--beta:before {
-  background-color: #2AF598;
-  background-image: linear-gradient(to right, #2AF598 30%, #08AEEA 100%);
-  position: absolute;
+.btn-hover.color-2 {
+    background-image: linear-gradient(to right, #f5ce62, #e43603, #fa7199, #e85a19);
+    box-shadow: 0 4px 15px 0 rgba(229, 66, 10, 0.75);
 }
-.btn--beta:hover, .btn--beta:focus, .btn--beta:active {
-  color: #08AEEA;
+.btn-hover.color-3 {
+    background-image: linear-gradient(to right, #667eea, #764ba2, #6B8DD6, #8E37D7);
+    box-shadow: 0 4px 15px 0 rgba(116, 79, 168, 0.75);
+}
+.btn-hover.color-4 {
+    background-image: linear-gradient(to right, #fc6076, #ff9a44, #ef9d43, #e75516);
+    box-shadow: 0 4px 15px 0 rgba(252, 104, 110, 0.75);
+}
+.btn-hover.color-5 {
+    background-image: linear-gradient(to right, #0ba360, #3cba92, #30dd8a, #2bb673);
+    box-shadow: 0 4px 15px 0 rgba(23, 168, 108, 0.75);
+}
+.btn-hover.color-6 {
+    background-image: linear-gradient(to right, #009245, #FCEE21, #00A8C5, #D9E021);
+    box-shadow: 0 4px 15px 0 rgba(83, 176, 57, 0.75);
+}
+.btn-hover.color-7 {
+    background-image: linear-gradient(to right, #6253e1, #852D91, #A3A1FF, #F24645);
+    box-shadow: 0 4px 15px 0 rgba(126, 52, 161, 0.75);
+}
+.btn-hover.color-8 {
+    background-image: linear-gradient(to right, #29323c, #485563, #2b5876, #4e4376);
+    box-shadow: 0 4px 15px 0 rgba(45, 54, 65, 0.75);
+}
+.btn-hover.color-9 {
+    background-image: linear-gradient(to right, #25aae1, #4481eb, #04befe, #3f86ed);
+    box-shadow: 0 4px 15px 0 rgba(65, 132, 234, 0.75);
+}
+.btn-hover.color-10 {
+        background-image: linear-gradient(to right, #ed6ea0, #ec8c69, #f7186a , #FBB03B);
+    box-shadow: 0 4px 15px 0 rgba(236, 116, 149, 0.75);
+}
+.btn-hover.color-11 {
+       background-image: linear-gradient(to right, #eb3941, #f15e64, #e14e53, #e2373f);  box-shadow: 0 5px 15px rgba(242, 97, 103, .4);
 }
 
-.btn--gamma {
-  background-color: #FEE140;
-  color: #FA709A;
-}
-.btn--gamma:before {
-  background-color: #FA709A;
-  background-image: linear-gradient(to right, #FA709A 30%, #FEE140 100%);
-  position: absolute;
-}
-.btn--gamma:hover, .btn--gamma:focus, .btn--gamma:active {
-  color: #FEE140;
-}
-
-.btn--delta {
-  background-color: #3EECAC;
-  color: #EE74E1;
-}
-.btn--delta:before {
-  background-color: #EE74E1;
-  background-image: linear-gradient(to right, #EE74E1 30%, #3EECAC 100%);
-  position: absolute;
-}
-.btn--delta:hover, .btn--delta:focus, .btn--delta:active {
-  color: #3EECAC;
-}</style>
+ </style>
   <body><div class="bg">
-    <Center> <img src="https://cdn.discordapp.com/avatars/775320672535576606/b5439574ab9f336fdf468e556ed969e3.png?size=4096" length="200" height="200"/><br>
-    <h1>Zardak</h1><br> <p>I'm a person interested in many stuffs </p><br>
-    <button class="btn btn--alpha"><span>Github</span></button>
-    <button class="btn btn--beta"><span>Spotify</span></button>
-    <button class="btn btn--gamma"><span>Reddit</span></button>
-    <button class="btn btn--delta"><span>Steam</span></button>
-</Center>
+   <img src="https://cdn.discordapp.com/avatars/775320672535576606/b5439574ab9f336fdf468e556ed969e3.png?size=4096" length="200" height="200"/><br>
+    <h1>Zardak</h1><br><br>
+    <div class="buttons">
+    <a href="https://www.github.com/Dormanor"><button class="btn-hover color-1"><span>Github</span></button></a><br>
+    <a href="https://www.open.spotify.com/user/cxnjric2e0obnvm4dkupwj1ua?si=5e3bb11d1a554e30"><button class="btn-hover color-3"><span>Spotify</span></button></a><br>
+    <A href="https://www.reddit.com/user/Famous-Position9362"><button class="btn-hover color-7"><span>Reddit</span></button></a><br>
+    <a href="https://www.steamcommunity.com/profiles/76561199211253200"><button class="btn-hover color-10"><span>Steam</span></button></a><br>
   </div></body></html>
