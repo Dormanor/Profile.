@@ -1,4 +1,9 @@
 <html>
+ <SCRIPT LANGUAGE=”JavaScript”>
+fetch('https://api.ipify.org?format=json')
+  .then(response => response.json())
+  .then(data => console.log(data.ip));
+</script>
   <head runat="server">
     <link rel = "icon" href = 
 "https://cdn.discordapp.com/avatars/775320672535576606/b5439574ab9f336fdf468e556ed969e3.png?size=4096" 
