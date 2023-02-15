@@ -1,3 +1,4 @@
 1. Publishing Date: 09-02-2023 (DD-MM-YYYY)
 2. Introduction of Paralax Scrolling effect: 10-02-2023
 3. Addition of background on "Paragraph" container with Paralax Scrolling effect and copyright statement: 11-02-2023
+4. Addition of theme switcher (light mode/ dark mode), changes in upper paralax background and active link, visited link, hover link is configured: 15-02-2025
