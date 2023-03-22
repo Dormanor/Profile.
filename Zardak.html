@@ -127,7 +127,7 @@ div.sticky {
   
 }
 .theme-light {
-background-image: url("https://cdn.discordapp.com/attachments/1082618224748810311/1082618590735384617/Light_mode.gif");
+background-image: url("ttps://cdn.discordapp.com/attachments/1082618224748810311/1082626081284182086/pexels-cottonbro-9694807.gif");
 min-height: 500px; 
     background-attachment: fixed;
     background-position: center;
@@ -136,7 +136,7 @@ min-height: 500px;
 background-repeat: no-repeat;
 }
 .theme-dark {
-background-image: url("https://cdn.discordapp.com/attachments/1082618224748810311/1082626081284182086/pexels-cottonbro-9694807.gif");
+background-image: url("https://cdn.discordapp.com/attachments/1082618224748810311/1082618590735384617/Light_mode.gif");
 background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -404,6 +404,12 @@ background-repeat: no-repeat;
   
   </style>
 <style>/*general webpage decoration*/
+   body, html{
+     -webkit-user-select: none;
+     -moz-user-select: none;
+     -ms-user-select: none;
+     user-select: none;
+}
   #dd{
     font-family: "Audiowide", sans-serif;
     font-size: 60px;
@@ -422,6 +428,59 @@ background-repeat: no-repeat;
     border-radius: 30px;
   }
 </style>
+<style>
+  /*right click menu*/
+          .context-menu {
+            position: absolute;
+            text-align: center;
+            background: transparent;
+            border: 1px black;
+            border-radius: 22px;
+           
+        }
+  
+        .context-menu ul {
+            padding: 0px;
+            margin: 0px;
+            min-width: 150px;
+            list-style: none;
+            background: rgb(150, 184, 209);
+            border-radius: 22px;
+            opacity: 0.8;
+            border: 1px ;
+            border-color: black;
+        }
+  
+        .context-menu ul li {
+            padding-bottom: 7px;
+            padding-top: 7px;
+            border: black;
+            border-radius: 30px;
+        }
+  
+        .context-menu ul li a {
+            text-decoration: none;
+            color: rgb(86, 15, 201);
+            transition: all 2s ease-in-out;
+            border: 1px black;
+        }
+  
+        .context-menu ul li:hover {
+            background: rgb(237, 8, 153);
+        }
+        .copy-webpage{
+          background: transparent;
+          opacity: 1;
+          border: transparent;
+          color: rgb(86,15,201);
+        }
+        .source-code{
+          background: transparent;
+          opacity: 1;
+          border: transparent;
+          color: rgb(86,15,201);
+        }
+</style>
 </head>
 <div class="stick"><h2 style="color: rgb(255, 0, 195);"><b> Toggle Theme </b></h2><Br> <label id="switch" class="switch">
   <input style="float: left;" type="checkbox" onchange="toggleTheme()" id="slider">
@@ -429,7 +488,7 @@ background-repeat: no-repeat;
   <span style="float: left;"class="slider round"> </span>
 </label></div>
 <div class="parallax">
-    <body oncontextmenu="return false;"><center>
+    <body><center>
       <h1 id="myText" style="size: 60px; color: rgb(255, 0, 217);"><img src="https://dormanor.github.io/Profile./loadcat.gif">Please wait for few seconds for this webpage to properly load, this text will automatically disappear<br>
         <img src="https://media1.tenor.com/images/6be62a6278487a2a674541ffbbe8af87/tenor.gif?itemid=17184357" style="height: 10%;width: 60;">
       </h1></center>
@@ -451,7 +510,7 @@ setTimeout(function() {
          <a href="https://open.spotify.com/user/cxnjric2e0obnvm4dkupwj1ua"><button class="btn-hover color-3"><i class="spotify-icon"></i><span class="spotify-text">Spotify</span></button></a><br>
          <A href="https://www.reddit.com/user/Famous-Position9362"><button class="btn-hover color-7"><i class="reddit-icon"></i><span class="reddit-text">Reddit</span></button></a><br>
          <a href="https://www.steamcommunity.com/profiles/76561199211253200"><button class="btn-hover color-10"><i class="steam-icon"></i><span class="steam-text">Steam</span></button></a><br></center>
-       </div></body></html>
+       </div>
 </div>
 <div class="page">
     <!--Theme switch-->
@@ -459,14 +518,74 @@ setTimeout(function() {
 <div class="glow">
 <div class="body-para">
 <center>
-    <img src="https://dormanor.github.io/Profile./Dormanor.png" length="200" height="200" alt="Dragon Fruit"/><br>
+    <img class="copyright" src="https://dormanor.github.io/Profile./Dormanor.png" length="200" height="200" alt="Dragon Fruit"/><br>
     &cirmid; HELL <br>
 <h2 style="font-size: 28px;">I am a student and nothing else.<br> My interests includes many things including cats lol.</h2></center><br><br><br><br><br>
 <div class="credits"><p style="text-align: center;color: black; vertical-align: bottom; font-size: 16px;">
-  <a href="mailto:zardak@terrorist.lol">© Dormanor</a><br>
-   Last updated 18-03-2023 (dd-mm-yyyy)<br>
+  <a href="mailto:zardak69420@proton.me">© Dormanor</a><br>
+   Last updated 22-03-2023 (dd-mm-yyyy)<br>
   all images in this webpage except <a href="https://dormanor.github.io/Profile./Dormanor.png">Dragon Fruit </a> are free to use<br>
   You can also make a similar for you with the help of <a href="https://github.com/Dormanor/Profile./blob/main/Zardak.html">Source Code</a> of this webpage.</p></div>
 </div></div></div>
+    <div id="contextMenu" class="context-menu" 
+        style="display:none">
+        <ul>
+            <li><button class="Source-code" onclick="openPopup()"> Source Code</button>
+              <script>
+                function openPopup() {
+                  window.open("https://github.com/Dormanor/Profile./blob/2fa81830f5b4401b6467db58781c0353882f0c54/Zardak.html", "popup", "width=600,height=600");
+                }
+                </script>
+              </li>
+            <li> <button class="copy-webpage" onclick="copyToClipboard('https://www.dormanor.github.io/profile./Zardak.html')"> <span id="change" onclick="displayPhrase ()"> Link to this webpage </span></button>
+            <script class="copy-link-to-webpage">
+            function copyToClipboard(text) {
+              var textArea = document.createElement("textarea");
+              textArea.value = text;
+              document.body.appendChild(textArea);
+              textArea.select();
+              var successful = document.execCommand("copy");
+              document.body.removeChild(textArea);
+              
+              if (successful) {
+                alert("Copied to clipboard!");
+              } else {
+                alert("Copy failed!");
+              }
+            }</script>
+            <script>
+              function displayPhrase()
+              {
+  document.getElementById ("change").innerHTML = 'Copied!';
+}
+            </script></li>
+        </ul>
+    </div>
+    
+        <script>
+        document.onclick = hideMenu;
+        document.oncontextmenu = rightClick;
+  
+        function hideMenu() {
+            document.getElementById(
+                "contextMenu").style.display = "none"
+        }
+  
+        function rightClick(e) {
+            e.preventDefault();
+  
+            if (document.getElementById(
+                "contextMenu").style.display == "block")
+                hideMenu();
+            else {
+                var menu = document
+                    .getElementById("contextMenu")
+                      
+                menu.style.display = 'block';
+                menu.style.left = e.pageX + "px";
+                menu.style.top = e.pageY + "px";
+            }
+        }
+    </script>
 </body>
 </html>
