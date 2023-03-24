@@ -127,7 +127,7 @@ div.sticky {
   
 }
 .theme-light {
-background-image: url("ttps://cdn.discordapp.com/attachments/1082618224748810311/1082626081284182086/pexels-cottonbro-9694807.gif");
+background-image: url("https://cdn.discordapp.com/attachments/1082618224748810311/1082626081284182086/pexels-cottonbro-9694807.gif");
 min-height: 500px; 
     background-attachment: fixed;
     background-position: center;
@@ -480,6 +480,28 @@ background-repeat: no-repeat;
           border: transparent;
           color: rgb(86,15,201);
         }
+        .source-code-icon{
+          background-image: url(https://cdn-icons-png.flaticon.com/512/3721/3721643.png);
+          background-size: contain;
+      background-position: left;
+      background-repeat: no-repeat;
+      height:20px;
+    width:20px;
+      display:inline-block; 
+    vertical-align: middle;
+    padding-right: 10; }
+    .link-to-webpage{
+      background-image: url(https://cdn-icons-png.flaticon.com/512/3925/3925158.png);
+      background-size: contain;
+      background-position: left;
+      background-repeat: no-repeat;
+      height:20px;
+    width:20px;
+      display:inline-block; 
+    vertical-align: middle;
+    padding-right: 10;
+
+    }
 </style>
 </head>
 <div class="stick"><h2 style="color: rgb(255, 0, 195);"><b> Toggle Theme </b></h2><Br> <label id="switch" class="switch">
@@ -523,21 +545,21 @@ setTimeout(function() {
 <h2 style="font-size: 28px;">I am a student and nothing else.<br> My interests includes many things including cats lol.</h2></center><br><br><br><br><br>
 <div class="credits"><p style="text-align: center;color: black; vertical-align: bottom; font-size: 16px;">
   <a href="mailto:zardak69420@proton.me">© Dormanor</a><br>
-   Last updated 23-03-2023 (dd-mm-yyyy)<br>
-  all images in this webpage except <a href="https://dormanor.github.io/Profile./Dormanor.png">Dragon Fruit </a> are free to use<br>
+   Last updated 24-03-2023 (dd-mm-yyyy)<br>
+  all images in this webpage except <br> <a href="https://dormanor.github.io/Profile./Dormanor.png">Dragon Fruit </a> are free to use<br>
   You can also make a similar for you with the help of <a href="https://dormanor.github.io/Profile./source-code.html">Source Code</a> of this webpage.</p></div>
 </div></div></div>
     <div id="contextMenu" class="context-menu" 
         style="display:none">
         <ul>
-            <li><button class="Source-code" onclick="openPopup()"> Source Code</button>
+            <li><button class="Source-code" onclick="openPopup()"><i class="source-code-icon"></i> Source Code</button>
               <script>
                 function openPopup() {
                   window.open("https://dormanor.github.io/Profile./source-code.html", "popup", "width=600,height=600");
                 }
                 </script>
               </li>
-            <li> <button class="copy-webpage" onclick="copyToClipboard('https://www.dormanor.github.io/profile./Zardak.html')"> <span id="change" onclick="displayPhrase ()"> Link to this webpage </span></button>
+            <li> <button class="copy-webpage" onclick="copyToClipboard('https://www.dormanor.github.io/profile./Zardak.html')"> <i class="link-to-webpage"></i><span id="change" onclick="displayPhrase ()"> Copy Link to this webpage </span></button>
             <script class="copy-link-to-webpage">
             function copyToClipboard(text) {
               var textArea = document.createElement("textarea");
