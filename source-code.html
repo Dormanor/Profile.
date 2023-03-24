@@ -6,9 +6,14 @@
 </head>
 <body>
     <style>
+      .dragon{
+        width: 97;
+        height: 97;
+      }
         body{
             background-image: url(https://images.pexels.com/photos/2693212/pexels-photo-2693212.png?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
-            background-repeat:no-re;
+            background-repeat:repeat-y;
+            background-size: 100%;
             
         }
         .container{
@@ -30,6 +35,8 @@
             word-wrap: break-word;
             max-width: 100%;
             opacity: 0.7;
+            
+
         }
         .copylol {
             background-color: rgb(34, 15, 209);
@@ -98,15 +105,84 @@
 a {
   text-decoration: none;
 }
+.context-menu {
+            position: absolute;
+            text-align: center;
+            background: transparent;
+            border: 1px black;
+            border-radius: 22px;
+           
+        }
+        .context-menu ul {
+            padding: 0px;
+            margin: 0px;
+            min-width: 150px;
+            list-style: none;
+            background: rgb(150, 184, 209);
+            border-radius: 22px;
+            opacity: 0.9;
+            border: 1px ;
+            border-color: black;
+        }
+  
+        .context-menu ul li {
+            padding-bottom: 7px;
+            padding-top: 7px;
+            border: black;
+            border-radius: 30px;
+        }
+  
+        .context-menu ul li a {
+            text-decoration: none;
+            color: rgb(86, 15, 201);
+            transition: all 2s ease-in-out;
+            border: 1px black;
+        }
+  
+        .context-menu ul li:hover {
+            background: rgb(237, 8, 153);
+        }
+        .right-code{
+          background: transparent;
+          border-radius: 20px;
+          border-color: transparent;
+          
+        }
+        .copy-right{
+          background: url(https://cdn-icons-png.flaticon.com/512/1622/1622069.png);
+          background-size: contain;
+      background-position: left;
+      background-repeat: no-repeat;
+      height:20px;
+    width:20px;
+      display:inline-block; 
+    vertical-align: middle;
+    padding-right: 20;
+        }
+.right-go-back{
+  background: transparent;
+  border: transparent;
+}
+.go-back-right-i{
+  background-image: url(https://cdn-icons-png.flaticon.com/512/2099/2099190.png);
+    background-size: contain;
+      background-position: left;
+      background-repeat: no-repeat;
+      height:20px;
+    width:20px;
+      display:inline-block; 
+    vertical-align: middle;
+    padding-right: 10;
+
+}
 
     </style>
     <div class="comtainer">
         <button class="copylol" id="copy-button" onclick="myFunction()"><i class="copy"></i><span id="copy-span" onclick="displayPhrase()" class="jjj">Copy this code</span></button></div>
+    <div class="dragon">
+      <img src="https://dormanor.github.io/Profile./Dormanor.png" class="dragon"/>
+    </div>
     
-    <script>
-
-    </script>
-    <br><br><br><br>
     <div class="code"><code id="gud"><pre>
 &lt;html&gt;
 &lt;head&gt;
@@ -120,7 +196,6 @@ href="https://fonts.googleapis.com/css?family=Audiowide&effect=neon"&gt;
 &lt;style&gt;/*Theme switcher*/
 .text{
   text-align:right;
-
 margin-top:1000px;
 }
 &lt;/style&gt;
@@ -556,6 +631,27 @@ background-repeat: no-repeat;
     width: 50%;
     border-radius: 30px;
   }
+  .source-code-icon{
+    background-image: url(https://cdn-icons-png.flaticon.com/512/3721/3721643.png);
+    background-size: contain;
+background-position: left;
+background-repeat: no-repeat;
+height:20px;
+width:20px;
+display:inline-block; 
+vertical-align: middle;
+padding-right: 10; }
+.link-to-webpage{
+background-image: url(https://cdn-icons-png.flaticon.com/512/3925/3925158.png);
+background-size: contain;
+background-position: left;
+background-repeat: no-repeat;
+height:20px;
+width:20px;
+display:inline-block; 
+vertical-align: middle;
+padding-right: 10;
+}
   &lt;/style&gt;
   &lt;style&gt;
   /*right click menu*/
@@ -691,7 +787,7 @@ You can also make a similar for you with the help of
  style="display:none"&gt;
 &lt;ul&gt;
 &lt;li&gt;
-&lt;button class="Source-code" onclick="openPopup()"&gt;Source Code&lt;/button&gt;
+&lt;button class="Source-code" onclick="openPopup()"&gt;&lt;i class="source-code-icon"&gt;&lt;/i&gt;Source Code&lt;/button&gt;
         &lt;script&gt;
 function openPopup() {
  window.open("example.png", "popup", "width=600,height=600");
@@ -700,6 +796,7 @@ function openPopup() {
 &lt;/li&gt;
 &lt;li&gt; 
 &lt;button class="copy-webpage" onclick="copyToClipboard('example')"&gt;
+&lt;i class="link-to-webpage"&gt;&lt;/i&gt;
  &lt;span id="change" onclick="displayPhrase ()"&gt; Link to this webpage 
  &lt;/span&gt;
  &lt;/button&gt;
@@ -751,6 +848,41 @@ menu.style.top = e.pageY + "px";
         &lt;/body&gt;
         &lt;/html&gt;</div></pre></code>
         </div></div>
+        <div id="contextMenu" class="context-menu" 
+        style="display:none">
+        <ul>
+          <li><button class="right-code"onclick="myFunction()"><i class="copy-right"></i>Copy this code</button>
+          </li>
+          <li>
+           <a style="text-decoration: none;"href="https://dormanor.github.io/Profile./ " <button class="right-go-back" style="color: black;"><i class="go-back-right-i"></i><span style="color: black;"> Go back</span></button>
+          </li>
+        </ul>
+        </div>
+        <Script>
+        document.onclick = hideMenu;
+        document.oncontextmenu = rightClick;
+  
+        function hideMenu() {
+            document.getElementById(
+                "contextMenu").style.display = "none"
+        }
+  
+        function rightClick(e) {
+            e.preventDefault();
+  
+            if (document.getElementById(
+                "contextMenu").style.display == "block")
+                hideMenu();
+            else {
+                var menu = document
+                    .getElementById("contextMenu")
+                      
+                menu.style.display = 'block';
+                menu.style.left = e.pageX + "px";
+                menu.style.top = e.pageY + "px";
+            }
+        }
+        </script>
         <script>
             function displayPhrase()
             {
@@ -765,6 +897,6 @@ document.getElementById ("copy-span").innerHTML = 'Copied!';
         
         </script>
         <center>
-          <a href="https://dormanor.github.io/Profile./"  <button class="go-back"><i class="go-back-icon"></i><span class="go-back-span">Go Back</span></button></a>
+          <a style="text-decoration: none;"href="https://dormanor.github.io/Profile./"  <button class="go-back"><i class="go-back-icon"></i><span class="go-back-span">Go Back</span></button></a>
         </center>
         </body></html>
