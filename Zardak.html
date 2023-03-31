@@ -5,7 +5,93 @@
 "https://dormanor.github.io/Profile./Dormanor.png" 
         type = "image/x-icon">
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide&effect=neon">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"/>
 </head>
+<style>
+  /*Top Navigation Bar*/
+    @import url(https://fonts.googleapis.com/css?family=Open+Sans);
+nav {
+  max-width: 960px;
+  mask-image: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, #ffffff 25%, #ffffff 75%, rgba(255, 255, 255, 0) 100%);
+  margin: 0 auto;
+  padding: 60px 0;
+  background-color: transparent;
+}
+
+nav ul {
+  text-align: center;
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.2) 25%, rgba(255, 255, 255, 0.2) 75%, rgba(255, 255, 255, 0) 100%);
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.1), inset 0 0 1px rgba(255, 255, 255, 0.6);
+}
+
+nav ul li {
+  display: inline-block;
+}
+
+nav ul li a {
+  padding: 18px;
+  font-family: "Open Sans";
+  text-transform:uppercase;
+  color: rgba(0, 35, 122, 0.5);
+  font-size: 18px;
+  text-decoration: none;
+  display: block;
+}
+
+nav ul li a:hover {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1), inset 0 0 1px rgba(255, 255, 255, 0.6);
+  background: rgba(255, 255, 255, 0.1);
+  color: rgba(0, 35, 122, 0.7);
+}
+.all-images { padding: 18px;
+  font-family: "Open Sans";
+  text-transform:uppercase;
+  font-size: 18px;
+  text-decoration: none;
+  display: block;}
+  .dropbtn {
+    padding: 18px;
+  font-family: "Open Sans";
+  text-transform:uppercase;
+  font-size: 18px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropbtn:hover, .dropbtn:focus {
+    box-shadow: 0 0 10px rgba(223, 9, 9, 0.1), inset 0 0 1px rgba(255, 255, 255, 0.6);
+  background: rgba(255, 255, 255, 0.1);
+  color: rgb(229, 11, 171)
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  overflow: auto;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  opacity: 0.4;
+  border-radius: 10px;
+}
+
+.dropdown-content a {
+  color: rgb(229, 11, 171);
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown a:hover {background-color: #ddd;}
+
+.show {display: block;}
+</style>
 <style>/*Theme switcher*/
 .text{
   text-align:right;
@@ -329,20 +415,20 @@ background-repeat: no-repeat;
 
         // function to toggle between light and dark theme
         function toggleTheme() {
-            if (localStorage.getItem('theme') === 'theme-dark') {
-                setTheme('theme-light');
-            } else {
+            if (localStorage.getItem('theme') === 'theme-light') {
                 setTheme('theme-dark');
+            } else {
+                setTheme('theme-light');
             }
         }
 
         // Immediately invoked function to set the theme on initial load
         (function () {
-            if (localStorage.getItem('theme') === 'theme-dark') {
-                setTheme('theme-light');
+            if (localStorage.getItem('theme') === 'theme-light') {
+                setTheme('theme-dark');
                 document.getElementById('slider').checked = false;
             } else {
-                setTheme('theme-light');
+                setTheme('theme-dark');
               document.getElementById('slider').checked = true;
             }
         })();
@@ -384,7 +470,7 @@ background-repeat: no-repeat;
   <Style>/*link stuff*/
   /* unvisited link */
   a:link {
-    color: red;
+    color: rgb(229, 11, 171);
   }
   
   /* visited link */
@@ -427,6 +513,15 @@ background-repeat: no-repeat;
     width: 50%;
     border-radius: 30px;
   }
+
+/*header*/
+header{
+  position: relative;
+  padding: 0 2rem;
+  background-color: rgb(229, 130, 222);
+  opacity: 0.5;
+  border: 2px;
+  border-radius: 40px;}
 </style>
 <style>
   /*right click menu*/
@@ -501,16 +596,226 @@ background-repeat: no-repeat;
     vertical-align: middle;
     padding-right: 10;
 
-    }
+  }
 </style>
-</head>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.toast{
+    position: absolute;
+    top: 25px;
+    right: 30px;
+    border-radius: 12px;
+    background: #d27cdf;
+    padding: 20px 35px 20px 25px;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+    border-left: 6px solid #4070f4;
+    overflow: hidden;
+    transform: translateX(calc(100% + 30px));
+    transition: all 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.35);
+}
+
+.toast.active{
+    transform: translateX(0%);
+    
+}
+
+
+
+.toast-content .check{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 35px;
+    width: 35px;
+    background-color: #4070f4;
+    color: #d348dd;
+    font-size: 20px;
+    border-radius: 50%;
+}
+
+.toast-content .message{
+  
+    margin: 0 20px;
+}
+
+.message .text{
+    font-size: 20px;
+    font-weight: 400;;
+    color: #666666;
+}
+
+.message .text.text-1{
+    font-weight: 600;
+    color: #333;
+}
+
+.toast .close{
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    padding: 5px;
+    cursor: pointer;
+    opacity: 0.7;
+}
+
+.toast .close:hover{
+    opacity: 1;
+}
+
+.toast .progress{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 3px;
+    width: 100%;
+    background: #d061be;
+}
+
+.toast .progress:before{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #4070f4;
+}
+
+.progress.active:before{
+    animation: progress 5s linear forwards;
+}
+
+@keyframes progress {
+    100%{
+        right: 100%;
+    }
+}
+
+.bruh{
+    padding: 12px 20px;
+    font-size: 20px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.message0303{
+  overflow: hidden;
+}
+.toast.active ~ .bruh{
+    pointer-events: none;
+}
+.bruh-message {
+    background: url(https://media.tenor.com/Fv1x6L2EsJAAAAAi/dog-bruh-dog.gif);
+}
+section{
+  overflow: hidden;
+}
+body{
+  overflow-x: hidden;
+}
+</style>
+</head><body>
+<section class="digga"><div class="toast">
+  <div class="toast-content">
+    <i class="fa-solid fa-triangle-exclamation fa-fade"></i>
+      <div class="message">
+          <span class="text text-1">BRUH!</span><br>
+          <span class="text text-2">I still couldn't figure out what to do with this button 💀</span>
+      </div>
+  </div>
+  <i class="fa-solid fa-xmark close"></i>
+
+  <div class="progress"></div></div>
+</div><br><br><br><br><br><br><br></section> <nav>
+  <ul>
+    <li>
+     <button class="bruh" style="background: transparent; border: transparent; color:rgb(229, 11, 171) ;">Zardak </button>
+    </li>
+    <li>
+      <button class="dropbtn" style="background: transparent; border: transparent;color: rgb(229, 11, 171)" onclick="openPopup()">Source Code</button></a>
+    </li>
+    <li>
+      <div class="dropdown"><button type="button" title="button" style="background: transparent; border: transparent; color: rgb(229, 11, 171);"onclick="myFunction()" class="dropbtn">All Elements</button>
+          <div id="myDropdown" class="dropdown-content">
+              <a href="https://dormanor.github.io/Profile./background.html">Background Images</a>
+              <a href="https://dormanor.github.io/Profile./load-message.html">Images on load message</a>
+              
+            </div>
+          </div></a>
+    </li>
+  </ul>
+<script>
+              const button = document.querySelector(".bruh"),
+      toast = document.querySelector(".toast")
+      closeIcon = document.querySelector(".close"),
+      progress = document.querySelector(".progress");
+
+      let timer1, timer2;
+
+      button.addEventListener("click", () => {
+        toast.classList.add("active");
+        progress.classList.add("active");
+
+        timer1 = setTimeout(() => {
+            toast.classList.remove("active");
+        }, 5000); //1s = 1000 milliseconds
+
+        timer2 = setTimeout(() => {
+          progress.classList.remove("active");
+        }, 5300);
+      });
+      
+      closeIcon.addEventListener("click", () => {
+        toast.classList.remove("active");
+        
+        setTimeout(() => {
+          progress.classList.remove("active");
+        }, 300);
+
+        clearTimeout(timer1);
+        clearTimeout(timer2);
+      });
+
+</script>
+  <script>
+        
+/* When the user clicks on the button, 
+toggle between hiding and showing the dropdown content */
+function myFunction() {
+  document.getElementById("myDropdown").classList.toggle("show");
+}
+
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+</script>
+  </nav>
 <div class="stick"><h2 style="color: rgb(255, 0, 195);"><b> Toggle Theme </b></h2><Br> <label id="switch" class="switch">
   <input style="float: left;" type="checkbox" onchange="toggleTheme()" id="slider">
  
   <span style="float: left;"class="slider round"> </span>
 </label></div>
 <div class="parallax">
-    <body><center>
+
+     <center>
       <h1 id="myText" style="size: 60px; color: rgb(255, 0, 217);"><img src="https://dormanor.github.io/Profile./loadcat.gif">Please wait for few seconds for this webpage to properly load, this text will automatically disappear<br>
         <img src="https://media1.tenor.com/images/6be62a6278487a2a674541ffbbe8af87/tenor.gif?itemid=17184357" style="height: 10%;width: 60;">
       </h1></center>
@@ -523,7 +828,8 @@ setTimeout(function() {
     // set the element's style.display property to none
     element.style.display = "none";
 }, 20000); // 10000 milliseconds = 10 seconds
-    </script><div class="bg">
+    </script>
+    <div class="bg">
         <center> <img src="https://cdn-icons-png.flaticon.com/512/8645/8645298.png" length="200" height="200" alt="Dragon Fruit"/><br>
           <h1 class="font-effect-neon" id="dd">Zardak</h1>
          <div class="buttons">
@@ -547,7 +853,7 @@ setTimeout(function() {
   <a href="mailto:zardak69420@proton.me">© Dormanor</a><br>
    Last updated 24-03-2023 (dd-mm-yyyy)<br>
   all images in this webpage except <br> <a href="https://dormanor.github.io/Profile./Dormanor.png">Dragon Fruit </a> are free to use<br>
-  You can also make a similar for you with the help of <a href="https://dormanor.github.io/Profile./source-code.html">Source Code</a> of this webpage.</p></div>
+  </p></div>
 </div></div></div>
     <div id="contextMenu" class="context-menu" 
         style="display:none">
