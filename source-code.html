@@ -1,524 +1,877 @@
-<html> <head>
-<title>Source Code</title>
-<link rel = "icon" href = 
-   "https://dormanor.github.io/Profile./Dormanor.png" 
-           type = "image/x-icon">
-</head>
-<body>
-    <style>
-      .dragon{
-        width: 97;
-        height: 97;
-      }
-        body{
-            background-image: url(https://images.pexels.com/photos/2693212/pexels-photo-2693212.png?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
-            background-repeat:repeat-y;
-            background-size: 100%;
-            
-        }
-        .container{
-            border: 10px;
-            border-radius: 20px;
-            border-color: gray; 
-            background-color: rgb(226, 220, 211);
-            border-style:ridge;
-            word-wrap: break-word;
-            max-width: 100%;
-            
-        }
-        .Code{
-            border: 10px  ;
-            border-radius: 20px;
-            border-color: gray;
-            background-color: rgb(226, 220, 211);
-            border-style:ridge;
-            word-wrap: break-word;
-            max-width: 100%;
-            opacity: 0.7;
-            
+<!DOCTYPE html>
 
-        }
-        .copylol {
-            background-color: rgb(34, 15, 209);
-            border-radius: 20px;
-            transition: opacity 0.5s ease-in-out, background-color 0.5s ease-in-out;
-            text-align: right;
-            float: right;
-            opacity: 0.9;
-        }
-        .copy{
-            background-image: url(https://cdn-icons-png.flaticon.com/512/1622/1622069.png);
-  background-size: contain;
-      background-position: left;
-      background-repeat: no-repeat;
-      height:20px;
-    width:20px;
-      display:inline-block; 
-    vertical-align: middle;
-    padding-right: 10px;
-    padding-top: 30px;
-    padding-left: 0px;
-}
-.copylol:hover{
-            background-color: rgb(135, 208, 25);
-        }
-.copy-span{
-    text-align: center;
-}
-.go-back-icon {
-    background-image: url(https://cdn-icons-png.flaticon.com/512/2099/2099190.png);
-    background-size: contain;
-      background-position: left;
-      background-repeat: no-repeat;
-      height:20px;
-    width:20px;
-      display:inline-block; 
-    vertical-align: middle;
-    padding-right: 10;
-}
-.go-back {
-    background-color: rgb(34, 15, 209);
-            border-radius: 20px;
-            transition: opacity 0.5s ease-in-out, background-color 0.5s ease-in-out;
-            text-align: right;
-            float: center;
-            opacity: 0.9;
-            width: 590px;
-            height: 60;
-            align-items: center;
-            justify-content: center;
-            display: flex;
-}
-.go-back:hover {
-    background-color: rgb(86, 86, 225);
-}
-.go-back-span{
-    color: white;
-    font-size: medium;
-    font-weight: bold;
-}
-.jjj{
-    color: white;
-    font-size: medium;
-    font-weight: bold;
-}
-a {
-  text-decoration: none;
-}
-.context-menu {
-            position: absolute;
-            text-align: center;
-            background: transparent;
-            border: 1px black;
-            border-radius: 22px;
-           
-        }
-        .context-menu ul {
-            padding: 0px;
-            margin: 0px;
-            min-width: 150px;
-            list-style: none;
-            background: rgb(150, 184, 209);
-            border-radius: 22px;
-            opacity: 0.9;
-            border: 1px ;
-            border-color: black;
-        }
-  
-        .context-menu ul li {
-            padding-bottom: 7px;
-            padding-top: 7px;
-            border: black;
-            border-radius: 30px;
-        }
-  
-        .context-menu ul li a {
-            text-decoration: none;
-            color: rgb(86, 15, 201);
-            transition: all 2s ease-in-out;
-            border: 1px black;
-        }
-  
-        .context-menu ul li:hover {
-            background: rgb(237, 8, 153);
-        }
-        .right-code{
-          background: transparent;
-          border-radius: 20px;
-          border-color: transparent;
-          
-        }
-        .copy-right{
-          background: url(https://cdn-icons-png.flaticon.com/512/1622/1622069.png);
-          background-size: contain;
-      background-position: left;
-      background-repeat: no-repeat;
-      height:20px;
-    width:20px;
-      display:inline-block; 
-    vertical-align: middle;
-    padding-right: 20;
-        }
-.right-go-back{
-  background: transparent;
-  border: transparent;
-}
-.go-back-right-i{
-  background-image: url(https://cdn-icons-png.flaticon.com/512/2099/2099190.png);
-    background-size: contain;
-      background-position: left;
-      background-repeat: no-repeat;
-      height:20px;
-    width:20px;
-      display:inline-block; 
-    vertical-align: middle;
-    padding-right: 10;
-
-}
-
-    </style>
-    <div class="comtainer">
-        <button class="copylol" id="copy-button" onclick="myFunction()"><i class="copy"></i><span id="copy-span" onclick="displayPhrase()" class="jjj">Copy this code</span></button></div>
-    <div class="dragon">
-      <img src="https://dormanor.github.io/Profile./Dormanor.png" class="dragon"/>
-    </div>
-    
-    <div class="code"><code id="gud"><pre>
-&lt;html&gt;
-&lt;head&gt;
-&lt;title&gt;Zardak&lt;/title&gt;
-&lt;link rel = "icon" href = 
-"https://example.png/.com?" 
-type = "image/x-icon"&gt;
-&lt;link rel="stylesheet" 
-href="https://fonts.googleapis.com/css?family=Audiowide&effect=neon"&gt;
-&lt;head&gt;
-&lt;style&gt;/*Theme switcher*/
-.text{
-  text-align:right;
-margin-top:1000px;
-}
-&lt;/style&gt;
-&lt;style&gt;
-  body {
+<html lang="en" dir="ltr">
+  <head>
+    <link rel = "icon" href = 
+"https://dormanor.github.io/Profile./Dormanor.png" 
+        type = "image/x-icon">
+    <meta charset="UTF-8">
+    <title> Source-Code</title>
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   </head>
+   <style>
+    /* Google Font CDN Link */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+*{
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins" , sans-serif;
+}
+.copy {
+  background: url(https://cdn-icons-png.flaticon.com/512/9321/9321839.png);
+  background-size: contain;
+      background-position: left;
+      background-repeat: no-repeat;
+      height:20px;
+    width:20px;
+      display:inline-block; 
+    vertical-align: middle;
+    padding-right: 30px;
+}
+body{
+  min-height: 100vh;
+  width: 100%;
+  background: url(https://images.pexels.com/photos/2693212/pexels-photo-2693212.png?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+  background-size: 100%;
+  background-repeat: repeat-y;
+} 
+.text-boxes{
   height: 100%;
   width: 100%;
-}
-
-.container {
   display: flex;
-  width: 100%;
-  height: 100%;
-  background: var(--color-secondary);
   flex-direction: column;
-  justify-content: center;
   align-items: center;
+  padding: 0 30px;
+  margin-bottom: 60px;
 }
-.container h1 {
-  color: var(--font-color);
-  font-family: sans-serif;
+.text-boxes .text-box{
+  height: 380px;
+  max-width: 660px;
+  width: 100%;
+  margin: 55px 0;
 }
-.container button {
-    margin: 0;
-    padding: 0;
-  color: var(--font-color);
-  background: var(--color-primary);
-  padding: 10px 20px;
-  border: 0;
-  border-radius: 5px;
-}
-
-/* The switch - the box around the slider */
-.switch {
-  position: relative;
-  display: inline-block;
-  width: 60px;
-  height: 34px;
+.text-boxes .text-box .topic{
+  font-size: 18px;
+  font-weight: 600;
+  color: #e41134;
+  margin: 4px;
+  font-size: 30px;
 }
 
-/* Hide default HTML checkbox */
-.switch input {
-  opacity: 0;
-  width: 0;
-  height: 0;
+.text-boxes .text-box textarea{
+  height: 100%;
+  width: 100%;
+  padding: 30px;
+  font-size: 15px;
+  font-weight: 400;
+  outline: none;
+  border: 1px solid #000000;
+  border-radius: 8px;
+  background: #ca76b2;
+  opacity: 0.8;
 }
-
-/* The slider */
-.slider {
-margin: 0%;
-padding:0%;
-  position: absolute;
+.text-box textarea::-webkit-scrollbar{
+  display: none;
+}
+.text-boxes .text-box button{
+  height: 45px;
+  width: 155px;
+  color: #fff;
+  background: #e322bd;
+  outline: none;
+  border: none;
+  border-radius: 8px;
+  font-size: 17px;
+  font-weight: 400;
+  margin: 8px 0;
   cursor: pointer;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-color: #ccc;
-  -webkit-transition: 0.4s;
-  transition: 0.4s;
+  transition: all 0.4s ease;
 }
-
-.slider:before {
-    margin: 0%;
-padding:0%;
-  position: absolute;
-  content: "";
-  height: 40px;
-  width: 40px;
-  left: 0px;
-  bottom: 4px;
-  top: 0;
-  bottom: 0;
-  margin: auto 0;
-  -webkit-transition: 0.4s;
-  transition: 0.4s;
-  box-shadow: 0 0px 15px #2020203d;
-  background: white url('https://i.ibb.co/FxzBYR9/night.png');
-  background-repeat: no-repeat;
-  background-position: center;
+.text-boxes .text-box button:hover{
+  background: #0ef14e;
 }
-
-input:checked + .slider {
-  background-color: #2196f3;
+@media (max-width: 400px) {
+  .text-boxes .text-box button{
+    width: 100%;
+  }
 }
-
-input:focus + .slider {
-  box-shadow: 0 0 1px #2196f3;
+.download {
+  background-color: #e322bd;
+  height: 60px;
+  width: 270px;
+  border-radius: 30px;
+  border: transparent;
+  transition: 0.2s ease-in-out;
+  color: white;
+  font-size: larger;
 }
-
-input:checked + .slider:before {
-  -webkit-transform: translateX(24px);
-  -ms-transform: translateX(24px);
-  transform: translateX(24px);
-  background: white url('https://i.ibb.co/7JfqXxB/sunny.png');
-  background-repeat: no-repeat;
-  background-position: center;
+.download:hover {
+  background-color: #ca76b2;
 }
-
-/* Rounded sliders */
-.slider.round {
-  border-radius: 34px;
-}
-
-.slider.round:before {
-  border-radius: 50%;
-}
-div.sticky {
-  position: -webkit-sticky;
-  position: sticky;
-  top: 0;
-  padding: 0px;
-  
-}
-.theme-light {
-background-image: url("example.png");
-min-height: 500px; 
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-background-repeat: no-repeat;
-}
-.theme-dark {
-background-image: url("example.png");
-background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-background-repeat: no-repeat;
-background-repeat: no-repeat;
-}
-&lt;/style&gt;
-&lt;style&gt;
- /*Button stuff*/
-
-* {
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
-}
-
-.buttons {
-    margin: 3px;
-    text-align: center;
-}
-
-.btn-hover {
-    width: 200px;
-    font-size: 16px;
-    font-weight: 600;
-    color: #fff;
-    cursor: pointer;
-    margin: 20px;
-    height: 55px;
-    text-align:center;
-    border: none;
-    background-size: 300% 100%;
-
-    border-radius: 50px;
-    moz-transition: all .4s ease-in-out;
-    -o-transition: all .4s ease-in-out;
-    -webkit-transition: all .4s ease-in-out;
-    transition: all .4s ease-in-out;
-}
-
-.btn-hover:hover {
-    background-position: 100% 0;
-    moz-transition: all .4s ease-in-out;
-    -o-transition: all .4s ease-in-out;
-    -webkit-transition: all .4s ease-in-out;
-    transition: all .4s ease-in-out;
-}
-
-.btn-hover:focus {
-    outline: none;
-}
-
-.btn-hover.color-1 {
-    background-image:
-     linear-gradient(to right, #25aae1, #40e495, #30dd8a, #2bb673);
-    box-shadow: 0 4px 15px 0 rgba(49, 196, 190, 0.75);
-}
-.btn-hover.color-2 {
-    background-image:
-     linear-gradient(to right, #f5ce62, #e43603, #fa7199, #e85a19);
-    box-shadow: 0 4px 15px 0 rgba(229, 66, 10, 0.75);
-}
-.btn-hover.color-3 {
-    background-image:
-     linear-gradient(to right, #667eea, #764ba2, #6B8DD6, #8E37D7);
-    box-shadow: 0 4px 15px 0 rgba(116, 79, 168, 0.75);
-}
-.btn-hover.color-4 {
-    background-image:
-     linear-gradient(to right, #fc6076, #ff9a44, #ef9d43, #e75516);
-    box-shadow: 0 4px 15px 0 rgba(252, 104, 110, 0.75);
-}
-.btn-hover.color-5 {
-    background-image:
-     linear-gradient(to right, #0ba360, #3cba92, #30dd8a, #2bb673);
-    box-shadow: 0 4px 15px 0 rgba(23, 168, 108, 0.75);
-}
-.btn-hover.color-6 {
-    background-image:
-     linear-gradient(to right, #009245, #FCEE21, #00A8C5, #D9E021);
-    box-shadow: 0 4px 15px 0 rgba(83, 176, 57, 0.75);
-}
-.btn-hover.color-7 {
-    background-image:
-     linear-gradient(to right, #6253e1, #852D91, #A3A1FF, #F24645);
-    box-shadow: 0 4px 15px 0 rgba(126, 52, 161, 0.75);
-}
-.btn-hover.color-8 {
-    background-image:
-     linear-gradient(to right, #29323c, #485563, #2b5876, #4e4376);
-    box-shadow: 0 4px 15px 0 rgba(45, 54, 65, 0.75);
-}
-.btn-hover.color-9 {
-    background-image:
-     linear-gradient(to right, #25aae1, #4481eb, #04befe, #3f86ed);
-    box-shadow: 0 4px 15px 0 rgba(65, 132, 234, 0.75);
-}
-.btn-hover.color-10 {
-        background-image:
-         linear-gradient(to right, #ed6ea0, #ec8c69, #f7186a , #FBB03B);
-    box-shadow: 0 4px 15px 0 rgba(236, 116, 149, 0.75);
-}
-.btn-hover.color-11 {
-       background-image:
-        linear-gradient(to right, #eb3941, #f15e64, #e14e53, #e2373f); 
-         box-shadow: 0 5px 15px rgba(242, 97, 103, .4);
-}
-/*github*/
-.github-icon {
-  background-image: url(icon.png);
+.download-{
+  background: url(https://cdn-icons-png.flaticon.com/512/2381/2381971.png);
   background-size: contain;
-      background-position: center;
+      background-position: left;
       background-repeat: no-repeat;
       height:20px;
     width:20px;
       display:inline-block; 
     vertical-align: middle;
-    padding-right: 50px;
-    padding-top: 30px;
-    padding-left: 0px;
+    padding-right: 30px;
 }
-.github-text {
-  display: inline-block;
-  vertical-align: middle;
-}
-.instagram-icon {
-  background-image: url(icon.png);
+.back-{
+  background: url(https://cdn-icons-png.flaticon.com/512/93/93634.png);
   background-size: contain;
-      background-position: center;
+      background-position: left;
       background-repeat: no-repeat;
       height:20px;
     width:20px;
       display:inline-block; 
     vertical-align: middle;
-    padding-right: 50px;
-    padding-top: 30px;
-    padding-left: 0px;
+    padding-right: 30px;
 }
-.instagram-text {
-  display: inline-block;
-  vertical-align: middle;
+.go-back{
+  background-color: #e322bd;
+  height: 60px;
+  width: 270px;
+  border-radius: 30px;
+  border: transparent;
+  transition: 0.2s ease-in-out;
+  color: white;
+  font-size: larger;
 }
-.spotify-icon {
-  background-image: url(icon.png);
-  background-size: contain;
-      background-position: center;
-      background-repeat: no-repeat;
-      height:20px;
-    width:20px;
-      display:inline-block; 
-    vertical-align: middle;
-    padding-right: 50px;
-    padding-top: 30px;
-    padding-left: 0px;
+.go-back:hover{
+  background-color: #ca76b2;
 }
-.spotify-text {
-  display: inline-block;
-  vertical-align: middle;
-}
-.reddit-icon {
-  background-image: url(icon.png);
-  background-size: contain;
-      background-position: center;
-      background-repeat: no-repeat;
-      height:20px;
-    width:20px;
-      display:inline-block; 
-    vertical-align: middle;
-    padding-right: 50px;
-    padding-top: 30px;
-    padding-left: 0px;
-}
-.reddit-text {
-  display: inline-block;
-  vertical-align: middle;
-}
-.steam-icon {
-  background-image: url(image.png);
-  background-size: contain;
-      background-position: center;
-      background-repeat: no-repeat;
-      height:20px;
-    width:20px;
-      display:inline-block; 
-    vertical-align: middle;
-    padding-right: 50px;
-    padding-top: 30px;
-    padding-left: 0px;
-}
-.steam-text {
-  display: inline-block;
-  vertical-align: middle;
-}
-&lt;/style&gt;
-&lt;script&gt;//Theme switcher
+/* ///// */
+</style>
+<body><center>
+  <div class="text-boxes">
+    <div class="text-box HTMLBox">
+      <div class="topic">HTML:</div>
+      <textarea id="HTMLBox" readonly >
+        &lt;html>
+        &lt;head>
+        &lt;title>Zardak&lt;/title>
+        &lt;link rel = "icon" href = 
+        "https://dormanor.github.io/Profile./Dormanor.png" 
+        type = "image/x-icon">
+        &lt;link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide&effect=neon">
+        &lt;link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"/> 
+        &lt;/head>
+        &lt;nav>
+        &lt;ul>
+        &lt;li>
+        &lt;section>
+        &lt;button class="bruh" style="background: transparent; border: transparent;color: rgb(229, 11, 171); font-size: 24; padding-right: 20px;">Zardak&lt;/button>
+        &lt;span class="overlay">&lt;/span>
+        &lt;div class="modal-box">
+        &lt;i class="fa-solid fa-poo-bolt fa-beat-fade" style="--fa-beat-fade-opacity: 0.1; --fa-beat-fade-scale: 1.25;" >&lt;/i>
+        &lt;h2>BRUH&lt;/h2>
+        &lt;h3>IDK WHAT TO DO WHIT THIS BTN&lt;/h3>
+        &lt;div class="buttons">
+        &lt;button class="close-btn">OK 👍💀&lt;/button>
+        &lt;/div>
+        &lt;/div>
+        &lt;/section>
+        &lt;/li>
+        &lt;li>
+        &lt;button class="dropbtn" style="background: transparent; border: transparent;color: rgb(229, 11, 171)" onclick="openPopup()">Source Code&lt;/button>&lt;/a>
+        &lt;/li>
+        &lt;li>
+        &lt;div class="dropdown">&lt;button type="button" title="button" style="background: transparent; border: transparent; color: rgb(229, 11, 171);"onclick="myFunction()" class="dropbtn">All Elements&lt;/button>
+        &lt;div id="myDropdown" class="dropdown-content">
+        &lt;a href="https://dormanor.github.io/Profile./background.html">Background Images&lt;/a>
+        &lt;a href="https://dormanor.github.io/Profile./load-message.html">Images on load message&lt;/a>       
+        &lt;/div>
+        &lt;/div>&lt;/a>
+        &lt;/li>
+        &lt;/ul>
+        &lt;/nav>
+        &lt;div class="stick">&lt;h2 style="color: rgb(255, 0, 195);">&lt;b> Toggle Theme &lt;/b>&lt;/h2>&lt;Br> &lt;label id="switch" class="switch">
+        &lt;input style="float: left;" type="checkbox" onchange="toggleTheme()" id="slider">
+        &lt;span style="float: left;"class="slider round"> &lt;/span>
+        &lt;/label>&lt;/div>
+        &lt;div class="parallax">
+        &lt;center>
+        &lt;h1 id="myText" style="size: 60px; color: rgb(255, 0, 217);">&lt;img src="https://dormanor.github.io/Profile./loadcat.gif">Please wait for few seconds for this webpage to properly load, this text will automatically disappear &lt;br>
+        &lt;img src="https://media1.tenor.com/images/6be62a6278487a2a674541ffbbe8af87/tenor.gif?itemid=17184357" style="height: 10%;width: 60;">
+        &lt;/h1>&lt;/center>
+        &lt;div class="bg">
+        &lt;center> &lt;img src="https://cdn-icons-png.flaticon.com/512/8645/8645298.png" length="200" height="200" alt="Dragon Fruit"/>&lt;br>
+        &lt;h1 class="font-effect-neon" id="dd">Zardak&lt;/h1>
+        &lt;div class="buttons">
+        &lt;a href="https://www.github.com/Dormanor">&lt;button class="btn-hover color-1">&lt;span class="github-text">&lt;i class="github-icon">&lt;/i>Github&lt;/span>&lt;/button>&lt;/a>&lt;br>
+        &lt;a href="https://www.instagram.com/kahtras_08/">&lt;button class="btn-hover color-9">&lt;i class="instagram-icon">&lt;/i>&lt;span class="instagram-text">Instagram&lt;/span>&lt;/button>&lt;/a>&lt;br>
+        &lt;a href="https://open.spotify.com/user/cxnjric2e0obnvm4dkupwj1ua">&lt;button class="btn-hover color-3">&lt;i class="spotify-icon">&lt;/i>&lt;span class="spotify-text">Spotify&lt;/span>&lt;/button>&lt;/a>&lt;br>
+        &lt;A href="https://www.reddit.com/user/Famous-Position9362">&lt;button class="btn-hover color-7">&lt;i class="reddit-icon">&lt;/i>&lt;span class="reddit-text">Reddit&lt;/span>&lt;/button>&lt;/a>&lt;br>
+        &lt;a href="https://www.steamcommunity.com/profiles/76561199211253200">&lt;button class="btn-hover color-10">&lt;i class="steam-icon">&lt;/i>&lt;span class="steam-text">Steam&lt;/span>&lt;/button>&lt;/a>&lt;br>&lt;/center>
+        &lt;/div>
+        &lt;/div>
+        &lt;div class="page">
+        &lt;!--Theme switch-->
+        &lt;div class="glow">
+        &lt;div class="body-para">
+        &lt;center>
+        &lt;img class="copyright" src="https://dormanor.github.io/Profile./Dormanor.png" length="200" height="200" alt="Dragon Fruit"/>&lt;br>
+        &cirmid; HELL &lt;br>
+        &lt;h2 style="font-size: 28px;">I am a student and nothing else.&lt;br> My interests includes many things including cats lol.&lt;/h2>&lt;/center>&lt;br>&lt;br>&lt;br>&lt;br>&lt;br>
+        &lt;div class="credits">&lt;p style="text-align: center;color: black; vertical-align: bottom; font-size: 16px;">
+        &lt;a href="mailto:zardak69420@proton.me">© Dormanor&lt;/a>&lt;br>
+        Last updated 24-03-2023 (dd-mm-yyyy)&lt;br>
+        all images in this webpage except &lt;br> &lt;a href="https://dormanor.github.io/Profile./Dormanor.png">Dragon Fruit &lt;/a> are free to use &lt;br>
+        &lt;/p>&lt;/div>
+        &lt;/div>&lt;/div>&lt;/div>
+        &lt;div id="contextMenu" class="context-menu" 
+        style="display:none">
+        &lt;ul>
+        &lt;li>&lt;button class="Source-code" onclick="openPopup()">&lt;i class="source-code-icon">&lt;/i> Source Code&lt;/button>&lt;/li>
+        &lt;/ul>
+        &lt;/div>
+        &lt;/body>
+        &lt;/html>  
+</textarea>
+      <button id="HTMLButton" class="copy-code"><i class="copy"></i>Copy</button>
+    </div>
+    <div class="text-box CSSBox">
+      <div class="topic">CSS:</div>
+      <textarea id="CSSBox" readonly >
+          /*Top Navigation Bar*/
+            @import url(https://fonts.googleapis.com/css?family=Open+Sans);
+        nav {
+          max-width: 960px;
+          mask-image: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, #ffffff 25%, #ffffff 75%, rgba(255, 255, 255, 0) 100%);
+          margin: 0 auto;
+          padding: 60px 0;
+          background-color: transparent;
+        }
+        
+        nav ul {
+          text-align: center;
+          background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.2) 25%, rgba(255, 255, 255, 0.2) 75%, rgba(255, 255, 255, 0) 100%);
+          box-shadow: 0 0 25px rgba(0, 0, 0, 0.1), inset 0 0 1px rgba(255, 255, 255, 0.6);
+        }
+        
+        nav ul li {
+          display: inline-block;
+        }
+        
+        nav ul li a {
+          padding: 18px;
+          font-family: "Open Sans";
+          text-transform:uppercase;
+          color: rgba(0, 35, 122, 0.5);
+          font-size: 18px;
+          text-decoration: none;
+          display: block;
+        }
+        
+        nav ul li a:hover {
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.1), inset 0 0 1px rgba(255, 255, 255, 0.6);
+          background: rgba(255, 255, 255, 0.1);
+          color: rgba(0, 35, 122, 0.7);
+        }
+        .all-images { padding: 18px;
+          font-family: "Open Sans";
+          text-transform:uppercase;
+          font-size: 18px;
+          text-decoration: none;
+          display: block;}
+          .dropbtn {
+            padding: 18px;
+          font-family: "Open Sans";
+          text-transform:uppercase;
+          font-size: 18px;
+          text-decoration: none;
+          display: block;
+        }
+        
+        .dropbtn:hover, .dropbtn:focus {
+            box-shadow: 0 0 10px rgba(223, 9, 9, 0.1), inset 0 0 1px rgba(255, 255, 255, 0.6);
+          background: rgba(255, 255, 255, 0.1);
+          color: rgb(229, 11, 171)
+        }
+        
+        .dropdown {
+          position: relative;
+          display: inline-block;
+        }
+        
+        .dropdown-content {
+          display: none;
+          position: absolute;
+          background-color: #f1f1f1;
+          min-width: 160px;
+          overflow: auto;
+          box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+          z-index: 1;
+          opacity: 0.4;
+          border-radius: 10px;
+        }
+        
+        .dropdown-content a {
+          color: rgb(229, 11, 171);
+          padding: 12px 16px;
+          text-decoration: none;
+          display: block;
+        }
+        
+        .dropdown a:hover {background-color: #ddd;}
+        
+        .show {display: block;}
+        /*Theme switcher*/
+        .text{
+          text-align:right;
+        
+        margin-top:1000px;
+        }
+          body {
+          margin: 0;
+          padding: 0;
+          height: 100%;
+          width: 100%;
+        }
+        
+        .container {
+          display: flex;
+          width: 100%;
+          height: 100%;
+          background: var(--color-secondary);
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+        }
+        .container h1 {
+          color: var(--font-color);
+          font-family: sans-serif;
+        }
+        .container button {
+            margin: 0;
+            padding: 0;
+          color: var(--font-color);
+          background: var(--color-primary);
+          padding: 10px 20px;
+          border: 0;
+          border-radius: 5px;
+        }
+        
+        /* The switch - the box around the slider */
+        .switch {
+          position: relative;
+          display: inline-block;
+          width: 60px;
+          height: 34px;
+        }
+        
+        /* Hide default HTML checkbox */
+        .switch input {
+          opacity: 0;
+          width: 0;
+          height: 0;
+        }
+        
+        /* The slider */
+        .slider {
+        margin: 0%;
+        padding:0%;
+          position: absolute;
+          cursor: pointer;
+          top: 0;
+          left: 0;
+          right: 0;
+          bottom: 0;
+          background-color: #ccc;
+          -webkit-transition: 0.4s;
+          transition: 0.4s;
+        }
+        
+        .slider:before {
+            margin: 0%;
+        padding:0%;
+          position: absolute;
+          content: "";
+          height: 40px;
+          width: 40px;
+          left: 0px;
+          bottom: 4px;
+          top: 0;
+          bottom: 0;
+          margin: auto 0;
+          -webkit-transition: 0.4s;
+          transition: 0.4s;
+          box-shadow: 0 0px 15px #2020203d;
+          background: white url('https://i.ibb.co/FxzBYR9/night.png');
+          background-repeat: no-repeat;
+          background-position: center;
+        }
+        
+        input:checked + .slider {
+          background-color: #2196f3;
+        }
+        
+        input:focus + .slider {
+          box-shadow: 0 0 1px #2196f3;
+        }
+        
+        input:checked + .slider:before {
+          -webkit-transform: translateX(24px);
+          -ms-transform: translateX(24px);
+          transform: translateX(24px);
+          background: white url('https://i.ibb.co/7JfqXxB/sunny.png');
+          background-repeat: no-repeat;
+          background-position: center;
+        }
+        
+        /* Rounded sliders */
+        .slider.round {
+          border-radius: 34px;
+        }
+        
+        .slider.round:before {
+          border-radius: 50%;
+        }
+        div.sticky {
+          position: -webkit-sticky;
+          position: sticky;
+          top: 0;
+          padding: 0px;
+          
+        }
+        .theme-light {
+        background-image: url("https://cdn.discordapp.com/attachments/1090888002823274576/1090888420034875403/Desktop_wallpaper_33.png");
+        min-height: 500px; 
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        background-repeat: no-repeat;
+        }
+        .theme-dark {
+        background-image: url("https://cdn.discordapp.com/attachments/1090888002823274576/1090888420294918164/Desktop_wallpaper_32.png");
+        background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        background-repeat: no-repeat;
+        background-repeat: no-repeat;
+        }
+         /*Button stuff*/
+        
+        * {
+            -webkit-box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            box-sizing: border-box;
+        }
+        
+        .buttons {
+            margin: 3px;
+            text-align: center;
+        }
+        
+        .btn-hover {
+            width: 200px;
+            font-size: 16px;
+            font-weight: 600;
+            color: #fff;
+            cursor: pointer;
+            margin: 20px;
+            height: 55px;
+            text-align:center;
+            border: none;
+            background-size: 300% 100%;
+        
+            border-radius: 50px;
+            moz-transition: all .4s ease-in-out;
+            -o-transition: all .4s ease-in-out;
+            -webkit-transition: all .4s ease-in-out;
+            transition: all .4s ease-in-out;
+        }
+        
+        .btn-hover:hover {
+            background-position: 100% 0;
+            moz-transition: all .4s ease-in-out;
+            -o-transition: all .4s ease-in-out;
+            -webkit-transition: all .4s ease-in-out;
+            transition: all .4s ease-in-out;
+        }
+        
+        .btn-hover:focus {
+            outline: none;
+        }
+        
+        .btn-hover.color-1 {
+            background-image: linear-gradient(to right, #25aae1, #40e495, #30dd8a, #2bb673);
+            box-shadow: 0 4px 15px 0 rgba(49, 196, 190, 0.75);
+        }
+        .btn-hover.color-2 {
+            background-image: linear-gradient(to right, #f5ce62, #e43603, #fa7199, #e85a19);
+            box-shadow: 0 4px 15px 0 rgba(229, 66, 10, 0.75);
+        }
+        .btn-hover.color-3 {
+            background-image: linear-gradient(to right, #667eea, #764ba2, #6B8DD6, #8E37D7);
+            box-shadow: 0 4px 15px 0 rgba(116, 79, 168, 0.75);
+        }
+        .btn-hover.color-4 {
+            background-image: linear-gradient(to right, #fc6076, #ff9a44, #ef9d43, #e75516);
+            box-shadow: 0 4px 15px 0 rgba(252, 104, 110, 0.75);
+        }
+        .btn-hover.color-5 {
+            background-image: linear-gradient(to right, #0ba360, #3cba92, #30dd8a, #2bb673);
+            box-shadow: 0 4px 15px 0 rgba(23, 168, 108, 0.75);
+        }
+        .btn-hover.color-6 {
+            background-image: linear-gradient(to right, #009245, #FCEE21, #00A8C5, #D9E021);
+            box-shadow: 0 4px 15px 0 rgba(83, 176, 57, 0.75);
+        }
+        .btn-hover.color-7 {
+            background-image: linear-gradient(to right, #6253e1, #852D91, #A3A1FF, #F24645);
+            box-shadow: 0 4px 15px 0 rgba(126, 52, 161, 0.75);
+        }
+        .btn-hover.color-8 {
+            background-image: linear-gradient(to right, #29323c, #485563, #2b5876, #4e4376);
+            box-shadow: 0 4px 15px 0 rgba(45, 54, 65, 0.75);
+        }
+        .btn-hover.color-9 {
+            background-image: linear-gradient(to right, #25aae1, #4481eb, #04befe, #3f86ed);
+            box-shadow: 0 4px 15px 0 rgba(65, 132, 234, 0.75);
+        }
+        .btn-hover.color-10 {
+                background-image: linear-gradient(to right, #ed6ea0, #ec8c69, #f7186a , #FBB03B);
+            box-shadow: 0 4px 15px 0 rgba(236, 116, 149, 0.75);
+        }
+        .btn-hover.color-11 {
+               background-image: linear-gradient(to right, #eb3941, #f15e64, #e14e53, #e2373f);  box-shadow: 0 5px 15px rgba(242, 97, 103, .4);
+        }
+        /*github*/
+        .github-icon {
+          background-image: url(https://cdn-icons-png.flaticon.com/512/733/733609.png);
+          background-size: contain;
+              background-position: center;
+              background-repeat: no-repeat;
+              height:20px;
+            width:20px;
+              display:inline-block; 
+            vertical-align: middle;
+            padding-right: 50px;
+            padding-top: 30px;
+            padding-left: 0px;
+        }
+        .github-text {
+          display: inline-block;
+          vertical-align: middle;
+        }
+        .instagram-icon {
+          background-image: url(https://cdn-icons-png.flaticon.com/512/174/174855.png);
+          background-size: contain;
+              background-position: center;
+              background-repeat: no-repeat;
+              height:20px;
+            width:20px;
+              display:inline-block; 
+            vertical-align: middle;
+            padding-right: 50px;
+            padding-top: 30px;
+            padding-left: 0px;
+        }
+        .instagram-text {
+          display: inline-block;
+          vertical-align: middle;
+        }
+        .spotify-icon {
+          background-image: url(https://cdn-icons-png.flaticon.com/512/2111/2111624.png);
+          background-size: contain;
+              background-position: center;
+              background-repeat: no-repeat;
+              height:20px;
+            width:20px;
+              display:inline-block; 
+            vertical-align: middle;
+            padding-right: 50px;
+            padding-top: 30px;
+            padding-left: 0px;
+        }
+        .spotify-text {
+          display: inline-block;
+          vertical-align: middle;
+        }
+        .reddit-icon {
+          background-image: url(https://cdn-icons-png.flaticon.com/512/5968/5968908.png);
+          background-size: contain;
+              background-position: center;
+              background-repeat: no-repeat;
+              height:20px;
+            width:20px;
+              display:inline-block; 
+            vertical-align: middle;
+            padding-right: 50px;
+            padding-top: 30px;
+            padding-left: 0px;
+        }
+        .reddit-text {
+          display: inline-block;
+          vertical-align: middle;
+        }
+        .steam-icon {
+          background-image: url(https://cdn-icons-png.flaticon.com/512/3670/3670382.png);
+          background-size: contain;
+              background-position: center;
+              background-repeat: no-repeat;
+              height:20px;
+            width:20px;
+              display:inline-block; 
+            vertical-align: middle;
+            padding-right: 50px;
+            padding-top: 30px;
+            padding-left: 0px;
+        }
+        .steam-text {
+          display: inline-block;
+          vertical-align: middle;
+        }
+        /*scrolling stuff*/
+          .body-para {
+            /* The image used */
+            background-image: url(https://cdn.discordapp.com/attachments/1082618224748810311/1082672602973208698/ezgif-1-1001debd61.gif);
+          
+            /* Set a specific height */
+            min-height: 500px;
+          
+            /* Create the parallax scrolling effect */
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+          }
+              .glow {
+            font-size: 80px;
+            color: #fff;
+            text-align: center;
+            animation: glow 1s ease-in-out infinite alternate;
+          
+          @-webkit-keyframes glow {
+            from {
+              text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
+            }
+            
+            to {
+              text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+            }
+          }
+              
+          }
+/*link stuff*/
+          /* unvisited link */
+          a:link {
+            color: rgb(229, 11, 171);
+          }
+          
+          /* visited link */
+          a:visited {
+            color: green;
+          }
+          
+          /* mouse over link */
+          a:hover {
+            color: hotpink;
+          }
+          
+          /* selected link */
+          a:active {
+            color: blue;
+          }
+          
+/*general webpage decoration*/
+           body, html{
+             -webkit-user-select: none;
+             -moz-user-select: none;
+             -ms-user-select: none;
+             user-select: none;
+        }
+          #dd{
+            font-family: "Audiowide", sans-serif;
+            font-size: 60px;
+          }
+          .GFG{
+           transition: all 0.3s ease-in-out;
+          }
+        
+           .GFG:hover {
+           box-shadow: 5px 5px 55px #d81085;
+          }
+          .credits{
+            background-color: white;
+            margin: 0 auto;
+            width: 50%;
+            border-radius: 30px;
+          }
+        
+        /*header*/
+        header{
+          position: relative;
+          padding: 0 2rem;
+          background-color: rgb(229, 130, 222);
+          opacity: 0.5;
+          border: 2px;
+          border-radius: 40px;}
+          /*right click menu*/
+                  .context-menu {
+                    position: absolute;
+                    text-align: center;
+                    background: transparent;
+                    border: 1px black;
+                    border-radius: 22px;
+                   
+                }
+          
+                .context-menu ul {
+                    padding: 0px;
+                    margin: 0px;
+                    min-width: 150px;
+                    list-style: none;
+                    background: rgb(150, 184, 209);
+                    border-radius: 22px;
+                    opacity: 0.8;
+                    border: 1px ;
+                    border-color: black;
+                }
+          
+                .context-menu ul li {
+                    padding-bottom: 7px;
+                    padding-top: 7px;
+                    border: black;
+                    border-radius: 30px;
+                }
+          
+                .context-menu ul li a {
+                    text-decoration: none;
+                    color: rgb(86, 15, 201);
+                    transition: all 2s ease-in-out;
+                    border: 1px black;
+                }
+          
+                .context-menu ul li:hover {
+                    background: rgb(237, 8, 153);
+                }
+                .copy-webpage{
+                  background: transparent;
+                  opacity: 1;
+                  border: transparent;
+                  color: rgb(86,15,201);
+                }
+                .source-code{
+                  background: transparent;
+                  opacity: 1;
+                  border: transparent;
+                  color: rgb(86,15,201);
+                }
+                .source-code-icon{
+                  background-image: url(https://cdn-icons-png.flaticon.com/512/3721/3721643.png);
+                  background-size: contain;
+              background-position: left;
+              background-repeat: no-repeat;
+              height:20px;
+            width:20px;
+              display:inline-block; 
+            vertical-align: middle;
+            padding-right: 10; }
+            .link-to-webpage{
+              background-image: url(https://cdn-icons-png.flaticon.com/512/3925/3925158.png);
+              background-size: contain;
+              background-position: left;
+              background-repeat: no-repeat;
+              height:20px;
+            width:20px;
+              display:inline-block; 
+            vertical-align: middle;
+            padding-right: 10;
+        
+          }
+        
+        /*popup message*/
+          /* Google Fonts - Poppins */
+        @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+        
+        * {
+          margin: 0;
+          padding: 0;
+          box-sizing: border-box;
+          font-family: "Poppins", sans-serif;
+        }
+        .modal-box {
+          position: fixed;
+          left: 50%;
+          top: 50%;
+          transform: translate(-50%, -50%);
+          box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+        }
+        section.active .show-modal {
+          display: none;
+        }
+        .overlay {
+          opacity: 0;
+          pointer-events: none;
+        }
+        section.active .overlay {
+          opacity: 1;
+          pointer-events: auto;
+        }
+        .modal-box {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          max-width: 380px;
+          width: 100%;
+          padding: 30px 20px;
+          border-radius: 24px;
+          background-color: #fff;
+          opacity: 0;
+          pointer-events: none;
+          transition: all 0.3s ease;
+          transform: translate(-50%, -50%) scale(1.2);
+        }
+        section.active .modal-box {
+          opacity: 1;
+          pointer-events: auto;
+          transform: translate(-50%, -50%) scale(1);
+        }
+        .modal-box i {
+          font-size: 70px;
+          color: #4070f4;
+        }
+        .modal-box h2 {
+          margin-top: 20px;
+          font-size: 25px;
+          font-weight: 500;
+          color: #333;
+        }
+        .modal-box h3 {
+          font-size: 16px;
+          font-weight: 400;
+          color: #333;
+          text-align: center;
+        }
+        .modal-box .buttons {
+          margin-top: 25px;
+        }
+        .modal-box button {
+          font-size: 14px;
+          padding: 6px 12px;
+          margin: 0 10px;
+        }
+        .close-btn{
+          background-color: rgb(229, 11, 171);
+          border: transparent;
+          border-radius: 20px;
+        }
+        
+      </textarea>
+      <button id="CSSButton" class="copy-code"><i class="copy"></i>Copy</button>
+    </div>
+    <div class="text-box JSBox">
+      <div class="topic">JavaScript:</div>
+      <textarea id="JSBox" readonly >
+        //Theme switcher
      // function to set a given theme/color-scheme
      function setTheme(themeName) {
             localStorage.setItem('theme', themeName);
@@ -527,203 +880,60 @@ background-repeat: no-repeat;
 
         // function to toggle between light and dark theme
         function toggleTheme() {
-            if (localStorage.getItem('theme') === 'theme-dark') {
-                setTheme('theme-light');
-            } else {
+            if (localStorage.getItem('theme') === 'theme-light') {
                 setTheme('theme-dark');
+            } else {
+                setTheme('theme-light');
             }
         }
 
         // Immediately invoked function to set the theme on initial load
         (function () {
-            if (localStorage.getItem('theme') === 'theme-dark') {
-                setTheme('theme-light');
+            if (localStorage.getItem('theme') === 'theme-light') {
+                setTheme('theme-dark');
                 document.getElementById('slider').checked = false;
             } else {
-                setTheme('theme-light');
+                setTheme('theme-dark');
               document.getElementById('slider').checked = true;
             }
         })();
+        //popup-stuff
+        const section = document.querySelector("section"),
+        overlay = document.querySelector(".overlay"),
+        showBtn = document.querySelector(".bruh"),
+        closeBtn = document.querySelector(".close-btn");
 
-        &lt;/script&gt;
-        &lt;/style&gt;
-        &lt;style&gt;/*scrolling stuff*/
-  .body-para {
-    /* The image used */
-    background-image: url(example.png);
-  
-    /* Set a specific height */
-    min-height: 500px;
-  
-    /* Create the parallax scrolling effect */
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
-      .glow {
-    font-size: 80px;
-    color: #fff;
-    text-align: center;
-    animation: glow 1s ease-in-out infinite alternate;
-  
-  @-webkit-keyframes glow {
-    from {
-      text-shadow: 0 0 10px #fff, 0 0 20px #fff,
-       0 0 30px #e60073, 0 0 40px #e60073,
-        0 0 50px #e60073, 0 0 60px #e60073,
-         0 0 70px #e60073;
-    }
-    
-    to {
-      text-shadow: 0 0 20px #fff,
-       0 0 30px #ff4da6, 0 0 40px #ff4da6,
-        0 0 50px #ff4da6, 0 0 60px #ff4da6,
-         0 0 70px #ff4da6, 0 0 80px #ff4da6;
+      showBtn.addEventListener("click", () => section.classList.add("active"));
+
+      overlay.addEventListener("click", () =>
+        section.classList.remove("active")
+      );
+
+      closeBtn.addEventListener("click", () =>
+        section.classList.remove("active")
+      );
+
+      /* When the user clicks on the button, 
+toggle between hiding and showing the dropdown content */
+function myFunction() {
+  document.getElementById("myDropdown").classList.toggle("show");
+}
+
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
     }
   }
-      
-  }
-  &lt;/style&gt;
-  &lt;Style&gt;/*link stuff*/
-  /* unvisited link */
-  a:link {
-    color: red;
-  }
-  
-  /* visited link */
-  a:visited {
-    color: green;
-  }
-  
-  /* mouse over link */
-  a:hover {
-    color: hotpink;
-  }
-  
-  /* selected link */
-  a:active {
-    color: blue;
-  }
-
-  &lt;/style&gt;
-  &lt;style&gt;/*general webpage decoration*/
-   body, html{
-     -webkit-user-select: none;
-     -moz-user-select: none;
-     -ms-user-select: none;
-     user-select: none;
 }
-  #dd{
-    font-family: "Audiowide", sans-serif;
-    font-size: 60px;
-  }
-  .GFG{
-   transition: all 0.3s ease-in-out;
-  }
 
-   .GFG:hover {
-   box-shadow: 5px 5px 55px #d81085;
-  }
-  .credits{
-    background-color: white;
-    margin: 0 auto;
-    width: 50%;
-    border-radius: 30px;
-  }
-  .source-code-icon{
-    background-image: url(https://cdn-icons-png.flaticon.com/512/3721/3721643.png);
-    background-size: contain;
-background-position: left;
-background-repeat: no-repeat;
-height:20px;
-width:20px;
-display:inline-block; 
-vertical-align: middle;
-padding-right: 10; }
-.link-to-webpage{
-background-image: url(https://cdn-icons-png.flaticon.com/512/3925/3925158.png);
-background-size: contain;
-background-position: left;
-background-repeat: no-repeat;
-height:20px;
-width:20px;
-display:inline-block; 
-vertical-align: middle;
-padding-right: 10;
-}
-  &lt;/style&gt;
-  &lt;style&gt;
-  /*right click menu*/
-          .context-menu {
-            position: absolute;
-            text-align: center;
-            background: transparent;
-            border: 1px black;
-            border-radius: 22px;
-           
-        }
-  
-        .context-menu ul {
-            padding: 0px;
-            margin: 0px;
-            min-width: 150px;
-            list-style: none;
-            background: rgb(150, 184, 209);
-            border-radius: 22px;
-            opacity: 0.8;
-            border: 1px ;
-            border-color: black;
-        }
-  
-        .context-menu ul li {
-            padding-bottom: 7px;
-            padding-top: 7px;
-            border: black;
-            border-radius: 30px;
-        }
-  
-        .context-menu ul li a {
-            text-decoration: none;
-            color: rgb(86, 15, 201);
-            transition: all 2s ease-in-out;
-            border: 1px black;
-        }
-  
-        .context-menu ul li:hover {
-            background: rgb(237, 8, 153);
-        }
-        .copy-webpage{
-          background: transparent;
-          opacity: 1;
-          border: transparent;
-          color: rgb(86,15,201);
-        }
-        .source-code{
-          background: transparent;
-          opacity: 1;
-          border: transparent;
-          color: rgb(86,15,201);
-        }
-        &lt;/style&gt;
-        &lt;/head&gt;
-        &lt;div class="stick"&gt;
-        &lt;h2 style="color: rgb(255, 0, 195);"&gt;&lt;b&gt; Toggle Theme &lt;/b&gt;
-        &lt;/h2&gt;&lt;Br&gt; &lt;label id="switch" class="switch"&gt;
-        &lt;input style="float: left;"
-         type="checkbox" onchange="toggleTheme()" id="slider"&gt;
-        &lt;span style="float: left;"class="slider round"&gt; &lt;/span&gt;
-        &lt;/label&gt;&lt;/div&gt;
-        &lt;div class="parallax"&gt;
-        &lt;body&gt;&lt;center&gt;
-        &lt;h1 id="myText" style="size: 60px; color: rgb(255, 0, 217);"&gt;
-        &lt;img src="example.png"&gt;
-        Please wait for few seconds for this webpage to properly load,
-         this text will automatically disappear
-         &lt;br&gt;
-        &lt;img src="example.png" style="height: 10%;width: 60;"&gt;
-        &lt;/h1&gt;&lt;/center&gt;
-        &lt;script&gt;//for the loading text to dissapear
+//for the loading text to dissapear
       // get access to the element you want to hide
 var element = document.getElementById("myText");
 
@@ -732,171 +942,89 @@ setTimeout(function() {
     // set the element's style.display property to none
     element.style.display = "none";
 }, 20000); // 10000 milliseconds = 10 seconds
-&lt;/script&gt;&lt;div class="bg"&gt;
-&lt;center&gt; &lt;img 
-src="https://example.png/.com?"
- length="200" height="200" alt="Dragon Fruit"/&gt;&lt;br&gt;
-&lt;h1 class="font-effect-neon" id="dd"&gt;Zardak &lt;/h1&gt;
-&lt;div class="buttons"&gt;
-&lt;a href="https://example.png/.com?"&gt;
-&lt;button class="btn-hover color-1"&gt;
-&lt;span class="github-text"&gt;&lt;i class="github-icon"&gt;
-&lt;/i&gt;Github&lt;/span&gt;&lt;/button&gt;&lt;/a&gt;&lt;br&gt;
-&lt;a href="https://example.png/.com?"&gt;
-&lt;button class="btn-hover color-9"&gt;
-&lt;i class="instagram-icon"&gt;
-&lt;/i&gt;&lt;span class="instagram-text"&gt;
-Instagram
-&lt;/span&gt;&lt;/button&gt;&lt;/a&gt;&lt;br&gt;
-&lt;a href="https://example.png/.com?"&gt;
-&lt;button class="btn-hover color-3"&gt;
-&lt;i class="spotify-icon"&gt;&lt;/i&gt;
-&lt;span class="spotify-text"&gt;Spotify&lt;/span&gt;
-&lt;/button&gt;&lt;/a&gt;&lt;br&gt;
-&lt;A href="https://example.png/.com?"&gt;
-&lt;button class="btn-hover color-7"&gt;
-&lt;i class="reddit-icon"&gt;&lt;/i&gt;
-&lt;span class="reddit-text"&gt;Reddit&lt;/span&gt;&lt;/button&gt;&lt;/a&gt;&lt;br&gt;
-&lt;a href="https://example.png/.com?"&gt;
-&lt;button class="btn-hover color-10"&gt;
-&lt;i class="steam-icon"&gt;&lt;/i&gt;
-&lt;span class="steam-text"&gt;Steam&lt;/span&gt;&lt;/button&gt;&lt;/a&gt;&lt;br&gt;&lt;/center&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class="page"&gt;
-&lt;!--Theme switch--&gt;
 
-&lt;div class="glow"&gt;
-&lt;div class="body-para"&gt;
-&lt;center&gt;
-&lt;img class="p-" src="example" length="200" height="200" alt=""/&gt;&lt;br&gt;
-&cirmid; HELL &lt;br&gt;
-&lt;h2 style="font-size: 28px;"&gt;I am a student and nothing else.&lt;br&gt;
- My interests includes many things including cats lol.&lt;/h2&gt;&lt;/center&gt;
- &lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;
-&lt;div class="obje"&gt;&lt;p style="text-align: center;color: black;
- vertical-align: bottom; font-size: 16px;"&gt;
-&lt;a href="mailto:mail@mail.mail"&gt;© Dormanor&lt;/a&gt;&lt;br&gt;
-Last updated xx-xx-xxxx (dd-mm-yyyy)&lt;br&gt;
-all images in this webpage except &lt;a href="lol.png"&gt;Dragon Fruit &lt;/a&gt;
- are free to use&lt;br&gt;
-You can also make a similar for you with the help of
- &lt;a href="ee"&gt;Source Code&lt;/a&gt; of this webpage.&lt;/p&gt;&lt;/div&gt;
-  &lt;/div&gt;&lt;/div&gt;&lt;/div&gt;
-  &lt;div id="contextMenu" class="context-menu" 
- style="display:none"&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;button class="Source-code" onclick="openPopup()"&gt;&lt;i class="source-code-icon"&gt;&lt;/i&gt;Source Code&lt;/button&gt;
-        &lt;script&gt;
 function openPopup() {
- window.open("example.png", "popup", "width=600,height=600");
+  window.open("https://dormanor.github.io/Profile./source-code.html", "popup", "width=600,height=600");
 }
-&lt;/script&gt;
-&lt;/li&gt;
-&lt;li&gt; 
-&lt;button class="copy-webpage" onclick="copyToClipboard('example')"&gt;
-&lt;i class="link-to-webpage"&gt;&lt;/i&gt;
- &lt;span id="change" onclick="displayPhrase ()"&gt; Link to this webpage 
- &lt;/span&gt;
- &lt;/button&gt;
-&lt;script class="copy-link-to-webpage"&gt;
-function copyToClipboard(text) {
-var textArea = document.createElement("textarea");
-textArea.value = text;
-document.body.appendChild(textArea);
-textArea.select();
-var successful = document.execCommand("copy");
-document.body.removeChild(textArea);         
-if (successful) {
-alert("Copied to clipboard!");
-} else {
- alert("Copy failed!");
-}
-}&lt;/script&gt;
-&lt;script&gt;
 function displayPhrase()
-{
+              {
   document.getElementById ("change").innerHTML = 'Copied!';
 }
-&lt;/script&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/div&gt;
-    
-&lt;script&gt;
-        document.onclick = hideMenu;
-        document.oncontextmenu = rightClick;
-  
-        function hideMenu() {
-            document.getElementById(
-"contextMenu").style.display = "none"
+document.onclick = hideMenu;
+document.oncontextmenu = rightClick;
+
+function hideMenu() {
+    document.getElementById(
+        "contextMenu").style.display = "none"
 }
+
 function rightClick(e) {
-e.preventDefault();
-if (document.getElementById(
-"contextMenu").style.display == "block")
-hideMenu();
-else {
- var menu = document
-.getElementById("contextMenu")        
-menu.style.display = 'block';
-menu.style.left = e.pageX + "px";
-menu.style.top = e.pageY + "px";
+    e.preventDefault();
+
+    if (document.getElementById(
+        "contextMenu").style.display == "block")
+        hideMenu();
+    else {
+        var menu = document
+            .getElementById("contextMenu")
+              
+        menu.style.display = 'block';
+        menu.style.left = e.pageX + "px";
+        menu.style.top = e.pageY + "px";
+    }
 }
-}
-        &lt;/script&gt;
-        &lt;/body&gt;
-        &lt;/html&gt;</div></pre></code>
-        </div></div>
-        <div id="contextMenu" class="context-menu" 
-        style="display:none">
-        <ul>
-          <li><button class="right-code"onclick="myFunction()"><i class="copy-right"></i>Copy this code</button>
-          </li>
-          <li>
-           <a style="text-decoration: none;"href="https://dormanor.github.io/Profile./ " <button class="right-go-back" style="color: black;"><i class="go-back-right-i"></i><span style="color: black;"> Go back</span></button>
-          </li>
-        </ul>
-        </div>
-        <Script>
-        document.onclick = hideMenu;
-        document.oncontextmenu = rightClick;
-  
-        function hideMenu() {
-            document.getElementById(
-                "contextMenu").style.display = "none"
-        }
-  
-        function rightClick(e) {
-            e.preventDefault();
-  
-            if (document.getElementById(
-                "contextMenu").style.display == "block")
-                hideMenu();
-            else {
-                var menu = document
-                    .getElementById("contextMenu")
-                      
-                menu.style.display = 'block';
-                menu.style.left = e.pageX + "px";
-                menu.style.top = e.pageY + "px";
-            }
-        }
-        </script>
-        <script>
-            function displayPhrase()
-            {
-document.getElementById ("copy-span").innerHTML = 'Copied!';
-}
-          </script>
-        <script>
-            function myFunction() {
-              var text = document.getElementById("gud").textContent;
-              navigator.clipboard.writeText(text);
-            }
-        
-        </script>
-        <center>
-          <a style="text-decoration: none;"href="https://dormanor.github.io/Profile./"  <button class="go-back"><i class="go-back-icon"></i><span class="go-back-span">Go Back</span></button></a>
-        </center>
-        </body></html>
+      </textarea>
+      <button id="JSButton" class="copy-code"><i class="copy"></i>Copy</button>
+    </div>
+  </div><br><Br>
+  <a href="https://dormanor.github.io/Profile./Source-code.zip">
+<button class="download" id="downloadButton" onclick="changeText()" download>
+<i class="download-"></i>
+Download instead
+</button></a>
+<br><br>
+<Br>
+  <a href="https://dormanor.github.io/Profile./Zardak.html">
+    <button class="go-back"><i class="back-"></i>Go Back</button>
+  </a>
+  <br><br>
+  <script>
+  function changeText() {
+    var button = document.getElementById("downloadButton");
+    button.innerHTML = "Downloading...";
+    setTimeout(function() {
+      button.innerHTML = "Download Again?";
+    }, 3000);
+  }
+  // HTML BOx JS Code
+    let HTMLBox = document.getElementById("HTMLBox");
+    let HTMLButton = document.getElementById("HTMLButton");
+
+    HTMLButton.onclick = function() {
+      HTMLBox.select();
+      document.execCommand("copy");
+      HTMLButton.innerText = "Copied"
+    }
+
+    // CSS Box Js Code
+      let CSSBox = document.getElementById("CSSBox");
+      let CSSButton = document.getElementById("CSSButton");
+
+      CSSButton.onclick = function() {
+        CSSBox.select();
+        document.execCommand("copy");
+        CSSButton.innerText = "Codes Copied"
+      }
+    // JavaScript BOx JS Code
+      let JSBox = document.getElementById("JSBox");
+      let JSButton = document.getElementById("JSButton");
+
+      JSButton.onclick = function() {
+        JSBox.select();
+        document.execCommand("copy");
+        JSButton.innerText = "Codes Copied"
+      }
+  </script>
+</center>
+</body>
+</html>
