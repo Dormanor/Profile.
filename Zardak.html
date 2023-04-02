@@ -5,7 +5,7 @@
 "https://dormanor.github.io/Profile./Dormanor.png" 
         type = "image/x-icon">
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide&effect=neon">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"/>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"/> 
 </head>
 <style>
   /*Top Navigation Bar*/
@@ -598,147 +598,116 @@ header{
 
   }
 </style>
-<style>
-  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
-}
+<style>/*popup message*/
+  /* Google Fonts - Poppins */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
 
-.toast{
-    position: absolute;
-    top: 25px;
-    right: 30px;
-    border-radius: 12px;
-    opacity: 0.8;
-    background: #ffffff;
-    padding: 20px 35px 20px 25px;
-    box-shadow: 0 5px 10px rgba(0,0,0,0.1);
-    border-left: 6px solid #4070f4;
-    overflow: hidden;
-    transform: translateX(calc(100% + 30px));
-    transition: all 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.35);
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
 }
-
-.toast.active{
-    transform: translateX(0%);
-    
+.modal-box {
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
 }
-
-
-
-.toast-content .check{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 35px;
-    width: 35px;
-    background-color: #4070f4;
-    color: #d348dd;
-    font-size: 20px;
-    border-radius: 50%;
+section.active .show-modal {
+  display: none;
 }
-
-.toast-content .message{
-  
-    margin: 0 20px;
+.overlay {
+  opacity: 0;
+  pointer-events: none;
 }
-
-.message .text{
-    font-size: 20px;
-    font-weight: 400;;
-    color: #666666;
+section.active .overlay {
+  opacity: 1;
+  pointer-events: auto;
 }
-
-.message .text.text-1{
-    font-weight: 600;
-    color: #333;
+.modal-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 380px;
+  width: 100%;
+  padding: 30px 20px;
+  border-radius: 24px;
+  background-color: #fff;
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.3s ease;
+  transform: translate(-50%, -50%) scale(1.2);
 }
-
-.toast .close{
-    position: absolute;
-    top: 10px;
-    right: 15px;
-    padding: 5px;
-    cursor: pointer;
-    opacity: 1;
+section.active .modal-box {
+  opacity: 1;
+  pointer-events: auto;
+  transform: translate(-50%, -50%) scale(1);
 }
-
-.toast .close:hover{
-    opacity: 1;
+.modal-box i {
+  font-size: 70px;
+  color: #4070f4;
 }
-
-.toast .progress{
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    height: 3px;
-    width: 100%;
-    background: #d061be;
+.modal-box h2 {
+  margin-top: 20px;
+  font-size: 25px;
+  font-weight: 500;
+  color: #333;
 }
-
-.toast .progress:before{
-    content: '';
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    height: 100%;
-    width: 100%;
-    background-color: #4070f4;
+.modal-box h3 {
+  font-size: 16px;
+  font-weight: 400;
+  color: #333;
+  text-align: center;
 }
-
-.progress.active:before{
-    animation: progress 5s linear forwards;
+.modal-box .buttons {
+  margin-top: 25px;
 }
-
-@keyframes progress {
-    100%{
-        right: 100%;
-    }
+.modal-box button {
+  font-size: 14px;
+  padding: 6px 12px;
+  margin: 0 10px;
 }
-
-.bruh{
-    padding: 12px 20px;
-    font-size: 20px;
-    outline: none;
-    border: none;
-    cursor: pointer;
-    transition: 0.3s;
-}
-.message0303{
-  overflow: hidden;
-}
-.toast.active ~ .bruh{
-    pointer-events: none;
-}
-.bruh-message {
-    background: url(https://media.tenor.com/Fv1x6L2EsJAAAAAi/dog-bruh-dog.gif);
-}
-section{
-  overflow: hidden;
-}
-body{
-  overflow-x: hidden;
+.close-btn{
+  background-color: rgb(229, 11, 171);
+  border: transparent;
+  border-radius: 20px;
 }
 </style>
-</head><body>
-<section class="digga"><div class="toast">
-  <div class="toast-content">
-    <i class="fa-solid fa-triangle-exclamation fa-fade"></i>
-      <div class="message">
-          <span class="text text-1">BRUH!</span><br>
-          <span class="text text-2">I still couldn't figure out what to do with this button 💀</span>
-      </div>
-  </div>
-  <i class="fa-solid fa-poo-bolt fa-beat-fade" style="--fa-beat-fade-opacity: 0.1; --fa-beat-fade-scale: 3.25;" ></i>
-
-  <div class="progress"></div></div>
-</div><br><br><br><br><br><br><br></section> <nav>
+ <nav>
   <ul>
     <li>
-     <button class="bruh" style="background: transparent; border: transparent; color:rgb(229, 11, 171) ;">Zardak </button>
+      <section>
+        <button class="bruh" style="background: transparent; border: transparent;color: rgb(229, 11, 171); font-size: 24; padding-right: 20px;">Zardak</button>
+        <span class="overlay"></span>
+  
+        <div class="modal-box">
+          <i class="fa-solid fa-poo-bolt fa-beat-fade" style="--fa-beat-fade-opacity: 0.1; --fa-beat-fade-scale: 1.25;" ></i>
+          <h2>BRUH</h2>
+          <h3>IDK WHAT TO DO WHIT THIS BTN</h3>
+  
+          <div class="buttons">
+            <button class="close-btn">OK 👍💀</button>
+          </div>
+        </div>
+      </section>
+      <script>
+        const section = document.querySelector("section"),
+          overlay = document.querySelector(".overlay"),
+          showBtn = document.querySelector(".bruh"),
+          closeBtn = document.querySelector(".close-btn");
+  
+        showBtn.addEventListener("click", () => section.classList.add("active"));
+  
+        overlay.addEventListener("click", () =>
+          section.classList.remove("active")
+        );
+  
+        closeBtn.addEventListener("click", () =>
+          section.classList.remove("active")
+        );
+      </script>
     </li>
     <li>
       <button class="dropbtn" style="background: transparent; border: transparent;color: rgb(229, 11, 171)" onclick="openPopup()">Source Code</button></a>
@@ -753,39 +722,6 @@ body{
           </div></a>
     </li>
   </ul>
-<script>
-              const button = document.querySelector(".bruh"),
-      toast = document.querySelector(".toast")
-      closeIcon = document.querySelector(".close"),
-      progress = document.querySelector(".progress");
-
-      let timer1, timer2;
-
-      button.addEventListener("click", () => {
-        toast.classList.add("active");
-        progress.classList.add("active");
-
-        timer1 = setTimeout(() => {
-            toast.classList.remove("active");
-        }, 5000); //1s = 1000 milliseconds
-
-        timer2 = setTimeout(() => {
-          progress.classList.remove("active");
-        }, 5300);
-      });
-      
-      closeIcon.addEventListener("click", () => {
-        toast.classList.remove("active");
-        
-        setTimeout(() => {
-          progress.classList.remove("active");
-        }, 300);
-
-        clearTimeout(timer1);
-        clearTimeout(timer2);
-      });
-
-</script>
   <script>
         
 /* When the user clicks on the button, 
