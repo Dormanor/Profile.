@@ -985,10 +985,13 @@ Download instead
 <br><br>
 <Br>
   <a href="https://dormanor.github.io/Profile./Zardak.html">
-    <button class="go-back"><i class="back-"></i>Go Back</button>
+    <button class="go-back" onclick="closeBtnClicked()"><i class="back-"></i>Go Back</button>
   </a>
   <br><br>
   <script>
+    function closeBtnClicked () {
+  window.close ();
+}
   function changeText() {
     var button = document.getElementById("downloadButton");
     button.innerHTML = "Downloading...";
