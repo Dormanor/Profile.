@@ -1,0 +1,629 @@
+          /*Top Navigation Bar*/
+          @import url(https://fonts.googleapis.com/css?family=Open+Sans);
+          nav {
+            max-width: 960px;
+            mask-image: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, #ffffff 25%, #ffffff 75%, rgba(255, 255, 255, 0) 100%);
+            margin: 0 auto;
+            padding: 60px 0;
+            background-color: transparent;
+          }
+          
+          nav ul {
+            text-align: center;
+            background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.2) 25%, rgba(255, 255, 255, 0.2) 75%, rgba(255, 255, 255, 0) 100%);
+            box-shadow: 0 0 25px rgba(0, 0, 0, 0.1), inset 0 0 1px rgba(255, 255, 255, 0.6);
+          }
+          
+          nav ul li {
+            display: inline-block;
+          }
+          
+          nav ul li a {
+            padding: 18px;
+            font-family: "Open Sans";
+            text-transform:uppercase;
+            color: rgba(0, 35, 122, 0.5);
+            font-size: 18px;
+            text-decoration: none;
+            display: block;
+          }
+          
+          nav ul li a:hover {
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1), inset 0 0 1px rgba(255, 255, 255, 0.6);
+            background: rgba(255, 255, 255, 0.1);
+            color: rgba(0, 35, 122, 0.7);
+          }
+          .all-images { padding: 18px;
+            font-family: "Open Sans";
+            text-transform:uppercase;
+            font-size: 18px;
+            text-decoration: none;
+            display: block;}
+            .dropbtn {
+              padding: 18px;
+            font-family: "Open Sans";
+            text-transform:uppercase;
+            font-size: 18px;
+            text-decoration: none;
+            display: block;
+          }
+          
+          .dropbtn:hover, .dropbtn:focus {
+              box-shadow: 0 0 10px rgba(223, 9, 9, 0.1), inset 0 0 1px rgba(255, 255, 255, 0.6);
+            background: rgba(255, 255, 255, 0.1);
+            color: rgb(229, 11, 171)
+          }
+          
+          .dropdown {
+            position: relative;
+            display: inline-block;
+          }
+          
+          .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f1f1f1;
+            min-width: 160px;
+            overflow: auto;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+            opacity: 0.4;
+            border-radius: 10px;
+          }
+          
+          .dropdown-content a {
+            color: rgb(229, 11, 171);
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+          }
+          
+          .dropdown a:hover {background-color: #ddd;}
+          
+          .show {display: block;}
+          /*Theme switcher*/
+          .text{
+            text-align:right;
+          
+          margin-top:1000px;
+          }
+            body {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            width: 100%;
+          }
+          
+          .container {
+            display: flex;
+            width: 100%;
+            height: 100%;
+            background: var(--color-secondary);
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+          }
+          .container h1 {
+            color: var(--font-color);
+            font-family: sans-serif;
+          }
+          .container button {
+              margin: 0;
+              padding: 0;
+            color: var(--font-color);
+            background: var(--color-primary);
+            padding: 10px 20px;
+            border: 0;
+            border-radius: 5px;
+          }
+          
+          /* The switch - the box around the slider */
+          .switch {
+            position: relative;
+            display: inline-block;
+            width: 60px;
+            height: 34px;
+          }
+          
+          /* Hide default HTML checkbox */
+          .switch input {
+            opacity: 0;
+            width: 0;
+            height: 0;
+          }
+          
+          /* The slider */
+          .slider {
+          margin: 0%;
+          padding:0%;
+            position: absolute;
+            cursor: pointer;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: #ccc;
+            -webkit-transition: 0.4s;
+            transition: 0.4s;
+          }
+          
+          .slider:before {
+              margin: 0%;
+          padding:0%;
+            position: absolute;
+            content: "";
+            height: 40px;
+            width: 40px;
+            left: 0px;
+            bottom: 4px;
+            top: 0;
+            bottom: 0;
+            margin: auto 0;
+            -webkit-transition: 0.4s;
+            transition: 0.4s;
+            box-shadow: 0 0px 15px #2020203d;
+            background: white url('https://i.ibb.co/FxzBYR9/night.png');
+            background-repeat: no-repeat;
+            background-position: center;
+          }
+          
+          input:checked + .slider {
+            background-color: #2196f3;
+          }
+          
+          input:focus + .slider {
+            box-shadow: 0 0 1px #2196f3;
+          }
+          
+          input:checked + .slider:before {
+            -webkit-transform: translateX(24px);
+            -ms-transform: translateX(24px);
+            transform: translateX(24px);
+            background: white url('https://i.ibb.co/7JfqXxB/sunny.png');
+            background-repeat: no-repeat;
+            background-position: center;
+          }
+          
+          /* Rounded sliders */
+          .slider.round {
+            border-radius: 34px;
+          }
+          
+          .slider.round:before {
+            border-radius: 50%;
+          }
+          div.sticky {
+            position: -webkit-sticky;
+            position: sticky;
+            top: 0;
+            padding: 0px;
+            
+          }
+          .theme-light {
+          background-image: url("https://cdn.discordapp.com/attachments/1090888002823274576/1090888420034875403/Desktop_wallpaper_33.png");
+          min-height: 500px; 
+              background-attachment: fixed;
+              background-position: center;
+              background-repeat: no-repeat;
+              background-size: cover;
+          background-repeat: no-repeat;
+          }
+          .theme-dark {
+          background-image: url("https://cdn.discordapp.com/attachments/1090888002823274576/1090888420294918164/Desktop_wallpaper_32.png");
+          background-attachment: fixed;
+              background-position: center;
+              background-repeat: no-repeat;
+              background-size: cover;
+          background-repeat: no-repeat;
+          background-repeat: no-repeat;
+          }
+           /*Button stuff*/
+          
+          * {
+              -webkit-box-sizing: border-box;
+              -moz-box-sizing: border-box;
+              box-sizing: border-box;
+          }
+          
+          .buttons {
+              margin: 3px;
+              text-align: center;
+          }
+          
+          .btn-hover {
+              width: 200px;
+              font-size: 16px;
+              font-weight: 600;
+              color: #fff;
+              cursor: pointer;
+              margin: 20px;
+              height: 55px;
+              text-align:center;
+              border: none;
+              background-size: 300% 100%;
+          
+              border-radius: 50px;
+              moz-transition: all .4s ease-in-out;
+              -o-transition: all .4s ease-in-out;
+              -webkit-transition: all .4s ease-in-out;
+              transition: all .4s ease-in-out;
+          }
+          
+          .btn-hover:hover {
+              background-position: 100% 0;
+              moz-transition: all .4s ease-in-out;
+              -o-transition: all .4s ease-in-out;
+              -webkit-transition: all .4s ease-in-out;
+              transition: all .4s ease-in-out;
+          }
+          
+          .btn-hover:focus {
+              outline: none;
+          }
+          
+          .btn-hover.color-1 {
+              background-image: linear-gradient(to right, #25aae1, #40e495, #30dd8a, #2bb673);
+              box-shadow: 0 4px 15px 0 rgba(49, 196, 190, 0.75);
+          }
+          .btn-hover.color-2 {
+              background-image: linear-gradient(to right, #f5ce62, #e43603, #fa7199, #e85a19);
+              box-shadow: 0 4px 15px 0 rgba(229, 66, 10, 0.75);
+          }
+          .btn-hover.color-3 {
+              background-image: linear-gradient(to right, #667eea, #764ba2, #6B8DD6, #8E37D7);
+              box-shadow: 0 4px 15px 0 rgba(116, 79, 168, 0.75);
+          }
+          .btn-hover.color-4 {
+              background-image: linear-gradient(to right, #fc6076, #ff9a44, #ef9d43, #e75516);
+              box-shadow: 0 4px 15px 0 rgba(252, 104, 110, 0.75);
+          }
+          .btn-hover.color-5 {
+              background-image: linear-gradient(to right, #0ba360, #3cba92, #30dd8a, #2bb673);
+              box-shadow: 0 4px 15px 0 rgba(23, 168, 108, 0.75);
+          }
+          .btn-hover.color-6 {
+              background-image: linear-gradient(to right, #009245, #FCEE21, #00A8C5, #D9E021);
+              box-shadow: 0 4px 15px 0 rgba(83, 176, 57, 0.75);
+          }
+          .btn-hover.color-7 {
+              background-image: linear-gradient(to right, #6253e1, #852D91, #A3A1FF, #F24645);
+              box-shadow: 0 4px 15px 0 rgba(126, 52, 161, 0.75);
+          }
+          .btn-hover.color-8 {
+              background-image: linear-gradient(to right, #29323c, #485563, #2b5876, #4e4376);
+              box-shadow: 0 4px 15px 0 rgba(45, 54, 65, 0.75);
+          }
+          .btn-hover.color-9 {
+              background-image: linear-gradient(to right, #25aae1, #4481eb, #04befe, #3f86ed);
+              box-shadow: 0 4px 15px 0 rgba(65, 132, 234, 0.75);
+          }
+          .btn-hover.color-10 {
+                  background-image: linear-gradient(to right, #ed6ea0, #ec8c69, #f7186a , #FBB03B);
+              box-shadow: 0 4px 15px 0 rgba(236, 116, 149, 0.75);
+          }
+          .btn-hover.color-11 {
+                 background-image: linear-gradient(to right, #eb3941, #f15e64, #e14e53, #e2373f);  box-shadow: 0 5px 15px rgba(242, 97, 103, .4);
+          }
+          /*github*/
+          .github-icon {
+            background-image: url(https://cdn-icons-png.flaticon.com/512/733/733609.png);
+            background-size: contain;
+                background-position: center;
+                background-repeat: no-repeat;
+                height:20px;
+              width:20px;
+                display:inline-block; 
+              vertical-align: middle;
+              padding-right: 50px;
+              padding-top: 30px;
+              padding-left: 0px;
+          }
+          .github-text {
+            display: inline-block;
+            vertical-align: middle;
+          }
+          .instagram-icon {
+            background-image: url(https://cdn-icons-png.flaticon.com/512/174/174855.png);
+            background-size: contain;
+                background-position: center;
+                background-repeat: no-repeat;
+                height:20px;
+              width:20px;
+                display:inline-block; 
+              vertical-align: middle;
+              padding-right: 50px;
+              padding-top: 30px;
+              padding-left: 0px;
+          }
+          .instagram-text {
+            display: inline-block;
+            vertical-align: middle;
+          }
+          .spotify-icon {
+            background-image: url(https://cdn-icons-png.flaticon.com/512/2111/2111624.png);
+            background-size: contain;
+                background-position: center;
+                background-repeat: no-repeat;
+                height:20px;
+              width:20px;
+                display:inline-block; 
+              vertical-align: middle;
+              padding-right: 50px;
+              padding-top: 30px;
+              padding-left: 0px;
+          }
+          .spotify-text {
+            display: inline-block;
+            vertical-align: middle;
+          }
+          .reddit-icon {
+            background-image: url(https://cdn-icons-png.flaticon.com/512/5968/5968908.png);
+            background-size: contain;
+                background-position: center;
+                background-repeat: no-repeat;
+                height:20px;
+              width:20px;
+                display:inline-block; 
+              vertical-align: middle;
+              padding-right: 50px;
+              padding-top: 30px;
+              padding-left: 0px;
+          }
+          .reddit-text {
+            display: inline-block;
+            vertical-align: middle;
+          }
+          .steam-icon {
+            background-image: url(https://cdn-icons-png.flaticon.com/512/3670/3670382.png);
+            background-size: contain;
+                background-position: center;
+                background-repeat: no-repeat;
+                height:20px;
+              width:20px;
+                display:inline-block; 
+              vertical-align: middle;
+              padding-right: 50px;
+              padding-top: 30px;
+              padding-left: 0px;
+          }
+          .steam-text {
+            display: inline-block;
+            vertical-align: middle;
+          }
+          /*scrolling stuff*/
+            .body-para {
+              /* The image used */
+              background-image: url(https://cdn.discordapp.com/attachments/1082618224748810311/1082672602973208698/ezgif-1-1001debd61.gif);
+            
+              /* Set a specific height */
+              min-height: 500px;
+            
+              /* Create the parallax scrolling effect */
+              background-attachment: fixed;
+              background-position: center;
+              background-repeat: no-repeat;
+              background-size: cover;
+            }
+                .glow {
+              font-size: 80px;
+              color: #fff;
+              text-align: center;
+              animation: glow 1s ease-in-out infinite alternate;
+            
+            @-webkit-keyframes glow {
+              from {
+                text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
+              }
+              
+              to {
+                text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+              }
+            }
+                
+            }
+  /*link stuff*/
+            /* unvisited link */
+            a:link {
+              color: rgb(229, 11, 171);
+            }
+            
+            /* visited link */
+            a:visited {
+              color: green;
+            }
+            
+            /* mouse over link */
+            a:hover {
+              color: hotpink;
+            }
+            
+            /* selected link */
+            a:active {
+              color: blue;
+            }
+            
+  /*general webpage decoration*/
+             body, html{
+               -webkit-user-select: none;
+               -moz-user-select: none;
+               -ms-user-select: none;
+               user-select: none;
+          }
+            #dd{
+              font-family: "Audiowide", sans-serif;
+              font-size: 60px;
+            }
+            .GFG{
+             transition: all 0.3s ease-in-out;
+            }
+          
+             .GFG:hover {
+             box-shadow: 5px 5px 55px #d81085;
+            }
+            .credits{
+              background-color: white;
+              margin: 0 auto;
+              width: 50%;
+              border-radius: 30px;
+            }
+          
+          /*header*/
+          header{
+            position: relative;
+            padding: 0 2rem;
+            background-color: rgb(229, 130, 222);
+            opacity: 0.5;
+            border: 2px;
+            border-radius: 40px;}
+            /*right click menu*/
+                    .context-menu {
+                      position: absolute;
+                      text-align: center;
+                      background: transparent;
+                      border: 1px black;
+                      border-radius: 22px;
+                     
+                  }
+            
+                  .context-menu ul {
+                      padding: 0px;
+                      margin: 0px;
+                      min-width: 150px;
+                      list-style: none;
+                      background: rgb(150, 184, 209);
+                      border-radius: 22px;
+                      opacity: 0.8;
+                      border: 1px ;
+                      border-color: black;
+                  }
+            
+                  .context-menu ul li {
+                      padding-bottom: 7px;
+                      padding-top: 7px;
+                      border: black;
+                      border-radius: 30px;
+                  }
+            
+                  .context-menu ul li a {
+                      text-decoration: none;
+                      color: rgb(86, 15, 201);
+                      transition: all 2s ease-in-out;
+                      border: 1px black;
+                  }
+            
+                  .context-menu ul li:hover {
+                      background: rgb(237, 8, 153);
+                  }
+                  .copy-webpage{
+                    background: transparent;
+                    opacity: 1;
+                    border: transparent;
+                    color: rgb(86,15,201);
+                  }
+                  .source-code{
+                    background: transparent;
+                    opacity: 1;
+                    border: transparent;
+                    color: rgb(86,15,201);
+                  }
+                  .source-code-icon{
+                    background-image: url(https://cdn-icons-png.flaticon.com/512/3721/3721643.png);
+                    background-size: contain;
+                background-position: left;
+                background-repeat: no-repeat;
+                height:20px;
+              width:20px;
+                display:inline-block; 
+              vertical-align: middle;
+              padding-right: 10; }
+              .link-to-webpage{
+                background-image: url(https://cdn-icons-png.flaticon.com/512/3925/3925158.png);
+                background-size: contain;
+                background-position: left;
+                background-repeat: no-repeat;
+                height:20px;
+              width:20px;
+                display:inline-block; 
+              vertical-align: middle;
+              padding-right: 10;
+          
+            }
+          
+          /*popup message*/
+            /* Google Fonts - Poppins */
+          @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+          
+          * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Poppins", sans-serif;
+          }
+          .modal-box {
+            position: fixed;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+          }
+          section.active .show-modal {
+            display: none;
+          }
+          .overlay {
+            opacity: 0;
+            pointer-events: none;
+          }
+          section.active .overlay {
+            opacity: 1;
+            pointer-events: auto;
+          }
+          .modal-box {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            max-width: 380px;
+            width: 100%;
+            padding: 30px 20px;
+            border-radius: 24px;
+            background-color: #fff;
+            opacity: 0;
+            pointer-events: none;
+            transition: all 0.3s ease;
+            transform: translate(-50%, -50%) scale(1.2);
+          }
+          section.active .modal-box {
+            opacity: 1;
+            pointer-events: auto;
+            transform: translate(-50%, -50%) scale(1);
+          }
+          .modal-box i {
+            font-size: 70px;
+            color: #4070f4;
+          }
+          .modal-box h2 {
+            margin-top: 20px;
+            font-size: 25px;
+            font-weight: 500;
+            color: #333;
+          }
+          .modal-box h3 {
+            font-size: 16px;
+            font-weight: 400;
+            color: #333;
+            text-align: center;
+          }
+          .modal-box .buttons {
+            margin-top: 25px;
+          }
+          .modal-box button {
+            font-size: 14px;
+            padding: 6px 12px;
+            margin: 0 10px;
+          }
+          .close-btn{
+            background-color: rgb(229, 11, 171);
+            border: transparent;
+            border-radius: 20px;
+          }
+          
+        
