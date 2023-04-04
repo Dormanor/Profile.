@@ -8,146 +8,12 @@
     <meta charset="UTF-8">
     <title> Source-Code</title>
      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="stylesheet" href="https://dormanor.github.io/Profile./source-code.css">
    </head>
    <style>
-    /* Google Font CDN Link */
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
-*{
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: "Poppins" , sans-serif;
-}
-.copy {
-  background: url(https://cdn-icons-png.flaticon.com/512/9321/9321839.png);
-  background-size: contain;
-      background-position: left;
-      background-repeat: no-repeat;
-      height:20px;
-    width:20px;
-      display:inline-block; 
-    vertical-align: middle;
-    padding-right: 30px;
-}
-body{
-  min-height: 100vh;
-  width: 100%;
-  background: url(https://images.pexels.com/photos/2693212/pexels-photo-2693212.png?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
-  background-size: 100%;
-  background-repeat: repeat-y;
-} 
-.text-boxes{
-  height: 100%;
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 0 30px;
-  margin-bottom: 60px;
-}
-.text-boxes .text-box{
-  height: 380px;
-  max-width: 660px;
-  width: 100%;
-  margin: 55px 0;
-}
-.text-boxes .text-box .topic{
-  font-size: 18px;
-  font-weight: 600;
-  color: #e41134;
-  margin: 4px;
-  font-size: 30px;
-}
 
-.text-boxes .text-box textarea{
-  height: 100%;
-  width: 100%;
-  padding: 30px;
-  font-size: 15px;
-  font-weight: 400;
-  outline: none;
-  border: 1px solid #000000;
-  border-radius: 8px;
-  background: #ca76b2;
-  opacity: 0.8;
-}
-.text-box textarea::-webkit-scrollbar{
-  display: none;
-}
-.text-boxes .text-box button{
-  height: 45px;
-  width: 155px;
-  color: #fff;
-  background: #e322bd;
-  outline: none;
-  border: none;
-  border-radius: 8px;
-  font-size: 17px;
-  font-weight: 400;
-  margin: 8px 0;
-  cursor: pointer;
-  transition: all 0.4s ease;
-}
-.text-boxes .text-box button:hover{
-  background: #0ef14e;
-}
-@media (max-width: 400px) {
-  .text-boxes .text-box button{
-    width: 100%;
-  }
-}
-.download {
-  background-color: #e322bd;
-  height: 60px;
-  width: 270px;
-  border-radius: 30px;
-  border: transparent;
-  transition: 0.2s ease-in-out;
-  color: white;
-  font-size: larger;
-}
-.download:hover {
-  background-color: #ca76b2;
-}
-.download-{
-  background: url(https://cdn-icons-png.flaticon.com/512/2381/2381971.png);
-  background-size: contain;
-      background-position: left;
-      background-repeat: no-repeat;
-      height:20px;
-    width:20px;
-      display:inline-block; 
-    vertical-align: middle;
-    padding-right: 30px;
-}
-.back-{
-  background: url(https://cdn-icons-png.flaticon.com/512/93/93634.png);
-  background-size: contain;
-      background-position: left;
-      background-repeat: no-repeat;
-      height:20px;
-    width:20px;
-      display:inline-block; 
-    vertical-align: middle;
-    padding-right: 30px;
-}
-.go-back{
-  background-color: #e322bd;
-  height: 60px;
-  width: 270px;
-  border-radius: 30px;
-  border: transparent;
-  transition: 0.2s ease-in-out;
-  color: white;
-  font-size: larger;
-}
-.go-back:hover{
-  background-color: #ca76b2;
-}
-/* ///// */
 </style>
-<body><center>
-  <div class="text-boxes">
+<body><center> <div class="text-boxes">
     <div class="text-box HTMLBox">
       <div class="topic">HTML:</div>
       <textarea id="HTMLBox" readonly >
@@ -986,7 +852,40 @@ function rightClick(e) {
       </textarea>
       <button id="JSButton" class="copy-code"><i class="copy"></i>Copy</button>
     </div>
-  </div><br><Br>
+  </div><br><!--Skill Bar-->
+  <div class="container">
+    <div class="skill-box">
+        <span class="title">HTML</span>
+        <div class="skill-bar">
+            <span class="skill-per html">
+                <span class="tooltip">17.9%</span>
+            </span>
+        </div>
+    </div>
+
+    <div class="skill-box">
+        <span class="title">CSS</span>
+
+        <div class="skill-bar">
+            <span class="skill-per css">
+                <span class="tooltip">71.8%</span>
+            </span>
+        </div>
+    </div>
+    <div class="skill-box">
+        <span class="title">JS</span>
+
+        <div class="skill-bar">
+            <span class="skill-per javascript">
+                <span class="tooltip">10.3%</span>
+            </span>
+        </div>
+    </div>
+ 
+        </div>
+    </div>
+</div>
+  <br><Br><center>
   <a href="https://dormanor.github.io/Profile./Source-code.zip">
 <button class="download" id="downloadButton" onclick="changeText()" download>
 <i class="download-"></i>
@@ -996,48 +895,10 @@ Download instead
 <Br>
   <a href="https://dormanor.github.io/Profile./Zardak.html">
     <button class="go-back" onclick="closeBtnClicked()"><i class="back-"></i>Go Back</button>
-  </a>
+  </a
   <br><br>
-  <script>
-    function closeBtnClicked () {
-  window.close ();
-}
-  function changeText() {
-    var button = document.getElementById("downloadButton");
-    button.innerHTML = "Downloading...";
-    setTimeout(function() {
-      button.innerHTML = "Download Again?";
-    }, 3000);
-  }
-  // HTML BOx JS Code
-    let HTMLBox = document.getElementById("HTMLBox");
-    let HTMLButton = document.getElementById("HTMLButton");
-
-    HTMLButton.onclick = function() {
-      HTMLBox.select();
-      document.execCommand("copy");
-      HTMLButton.innerText = "Copied"
-    }
-
-    // CSS Box Js Code
-      let CSSBox = document.getElementById("CSSBox");
-      let CSSButton = document.getElementById("CSSButton");
-
-      CSSButton.onclick = function() {
-        CSSBox.select();
-        document.execCommand("copy");
-        CSSButton.innerText = "Codes Copied"
-      }
-    // JavaScript BOx JS Code
-      let JSBox = document.getElementById("JSBox");
-      let JSButton = document.getElementById("JSButton");
-
-      JSButton.onclick = function() {
-        JSBox.select();
-        document.execCommand("copy");
-        JSButton.innerText = "Codes Copied"
-      }
+  <script src="https://dormanor.github.io/Profile./source-%20code.js">
   </script>
-</center>
+
 </body>
 </html>
