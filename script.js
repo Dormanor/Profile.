@@ -100,3 +100,25 @@ else {
     menu.style.top = e.pageY + "px";
 }
 }
+function showDiscordID() {
+  const discordIDshow = document.getElementById("discordIDshow");
+  discordIDshow.classList.add("show");
+  discordIDshow.textContent = "@dormanor";
+}
+
+function hideDiscordID() {
+  const discordIDshow = document.getElementById("discordIDshow");
+  discordIDshow.classList.remove("show");
+  discordIDshow.textContent = "Discord";
+}
+
+function copyText() {
+  const text = "dormanor";
+  const textarea = document.createElement("textarea");
+  textarea.value = text;
+  document.body.appendChild(textarea);
+  textarea.select();
+  document.execCommand("copy");
+  document.body.removeChild(textarea);
+  document.getElementById("discordIDshow").textContent = "ID copied!";
+}
