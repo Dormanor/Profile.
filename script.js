@@ -122,3 +122,59 @@ function copyText() {
   document.body.removeChild(textarea);
   document.getElementById("discordIDshow").textContent = "ID copied!";
 }
+////////////////////setup for idk what nigger////////
+const dynamicWords = ["coding", "design", "photography", "geography", "languages", "pets"];
+let wordIndex = 0;
+
+const dynamicWordElement = document.getElementById("dynamic-word");
+
+function revealWord() {
+    const word = dynamicWords[wordIndex];
+    const letters = word.split("");
+    let index = 0;
+
+    dynamicWordElement.textContent = "";
+
+    const revealTimer = setInterval(() => {
+        if (index >= letters.length) {
+            clearInterval(revealTimer);
+            setTimeout(hideWord, 1000);
+        } else {
+            dynamicWordElement.textContent += letters[index];
+            index++;
+        }
+    }, 150);
+}
+
+function hideWord() {
+    const letters = dynamicWordElement.textContent.split("");
+    let index = letters.length - 1;
+
+    const hideTimer = setInterval(() => {
+        if (index < 0) {
+            clearInterval(hideTimer);
+            wordIndex = (wordIndex + 1) % dynamicWords.length;
+            setTimeout(revealWord, 1000);
+        } else {
+            letters.splice(index, 1);
+            dynamicWordElement.textContent = letters.join("");
+            index--;
+        }
+    }, 150);
+}
+
+revealWord();
+document.getElementById('discord-button').ondblclick = function() {
+    window.location = 'https://discord.com/users/775320672535576606';
+};
+///Discord button shit
+const myButton = document.getElementById('discord-button');
+const myTooltip = document.getElementById('myTooltip');
+
+myButton.addEventListener('mouseover', () => {
+    myTooltip.style.display = 'block'; console.log('mouseover')
+});
+
+myButton.addEventListener('mouseout', () => {
+    myTooltip.style.display = 'none';
+});
