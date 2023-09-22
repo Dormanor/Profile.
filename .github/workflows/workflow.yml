@@ -1,0 +1,15 @@
+name: Git Pull
+on:
+  push:
+    tags:
+      - "zardak-profile"
+    branches:
+      - main
+
+jobs:
+  pull:
+    runs-on: zardak-profile
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
